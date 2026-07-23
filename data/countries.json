@@ -1,0 +1,21 @@
+{
+  "BR": {"name":"Brasil","region":{"pt":"América do Sul","es":"América del Sur"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[{"name":"Workshop Managed Change™","date":"Mai 2026","tag":"Virtual"},{"name":"Masters of Managed Change™","date":"Jul 2026","tag":{"pt":"Presencial","es":"Presencial"}}]},
+  "MX": {"name":"México","region":{"pt":"América do Norte","es":"América del Norte"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[{"name":"Workshop Managed Change™","date":"Jun 2026","tag":"Virtual"}]},
+  "CO": {"name":"Colombia","region":{"pt":"América do Sul","es":"América del Sur"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[{"name":"Workshop Managed Change™","date":"Ago 2026","tag":"Virtual"}]},
+  "AR": {"name":"Argentina","region":{"pt":"América do Sul","es":"América del Sur"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "CL": {"name":"Chile","region":{"pt":"América do Sul","es":"América del Sur"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[{"name":"Workshop Managed Change™","date":"Set 2026","tag":"Virtual"}]},
+  "PE": {"name":"Perú","region":{"pt":"América do Sul","es":"América del Sur"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "EC": {"name":"Ecuador","region":{"pt":"América do Sul","es":"América del Sur"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "VE": {"name":"Venezuela","region":{"pt":"América do Sul","es":"América del Sur"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "UY": {"name":"Uruguay","region":{"pt":"América do Sul","es":"América del Sur"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "PY": {"name":"Paraguay","region":{"pt":"América do Sul","es":"América del Sur"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "BO": {"name":"Bolivia","region":{"pt":"América do Sul","es":"América del Sur"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "CR": {"name":"Costa Rica","region":{"pt":"América Central","es":"América Central"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "PA": {"name":"Panamá","region":{"pt":"América Central","es":"América Central"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "GT": {"name":"Guatemala","region":{"pt":"América Central","es":"América Central"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "DO": {"name":"Rep. Dominicana","region":{"pt":"Caribe","es":"Caribe"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "HN": {"name":"Honduras","region":{"pt":"América Central","es":"América Central"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "SV": {"name":"El Salvador","region":{"pt":"América Central","es":"América Central"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "NI": {"name":"Nicaragua","region":{"pt":"América Central","es":"América Central"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]},
+  "CU": {"name":"Cuba","region":{"pt":"Caribe","es":"Caribe"},"email":"LaMarshLA@collabz.com.br","phone":"+55 11 98133-0567","courses":[]}
+}
