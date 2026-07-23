@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="LaMarsh Global na América Latina. Certificação em Gestão de Mudanças com a metodologia Managed Change™, referência mundial desde 1979.">
+<meta name="keywords" content="gestão de mudanças, change management, LaMarsh, Managed Change, certificação, Brasil, América Latina">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LaMarsh Global — América Latina | Gestão de Mudanças">
+<meta property="og:description" content="Certificação em Gestão de Mudanças com a metodologia Managed Change™ desde 1979. Cursos e consultoria no Brasil e LATAM.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"LaMarsh Global LATAM","url":"https://lamarshlatam.com","foundingDate":"1979","areaServed":"Latin America","contactPoint":{"@type":"ContactPoint","telephone":"+55-11-98133-0567","email":"LaMarshLA@collabz.com.br"}}</script>
+<title>LaMarsh Global — América Latina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+--navy: #2B3D4F;
+--navy-light: #3A4F63;
+--gold: #A20934;
+--gold-light: #C41E4A;
+--wine-text: #E85D7F;
+--cream: #F6F3F1;
+--cream-dark: #ECE7E3;
+--white: #ffffff;
+--text-dark: #1a1a2e;
+--text-medium: #4a4a5a;
+--text-light: #7a7a8a;
+--accent-teal: #2A7B88;
+--font-display: 'Cormorant Garamond', Georgia, serif;
+--font-body: 'DM Sans', 'Segoe UI', sans-serif;
+--max-width: 1200px;
+--transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--text-dark);background:var(--cream);overflow-x:hidden;line-height:1.7}
+/* ===== LANGUAGE BAR ===== */
+.lang-bar{
+position:fixed;top:0;left:0;right:0;z-index:10001;
+background:var(--gold);
+height:36px;display:flex;align-items:center;justify-content:flex-end;
+padding:0 2rem;
+border-bottom:1px solid rgba(162,9,52,0.1);
+}
+.lang-bar .lang-options{display:flex;gap:0.2rem;align-items:center}
+.lang-bar .lang-btn{
+background:none;border:1px solid transparent;color:rgba(255,255,255,0.5);
+font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;
+padding:4px 10px;border-radius:4px;cursor:pointer;transition:var(--transition);
+font-family:var(--font-body);
+}
+.lang-bar .lang-btn:hover{color:rgba(255,255,255,0.8)}
+.lang-bar .lang-btn.active{color:var(--gold);border-color:#FFFFFF;background:#FFFFFF;font-weight:700}
+.lang-bar .lang-sep{color:rgba(255,255,255,0.15);font-size:0.7rem;margin:0 2px}
+.lang-bar .lang-label{color:rgba(255,255,255,0.3);font-size:0.68rem;margin-right:0.5rem;letter-spacing:0.05em}
+/* ===== HEADER ===== */
+.header{position:fixed;top:36px;left:0;right:0;z-index:9999;background:#FFFFFF;border-bottom:1px solid rgba(43,61,79,0.08);transition:box-shadow 0.3s;box-shadow:0 1px 10px rgba(43,61,79,0.06)}
+.header.scrolled{box-shadow:0 4px 30px rgba(11,29,58,0.3)}
+.nav-container{max-width:var(--max-width);margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:0.5rem;text-decoration:none;cursor:pointer}
+.logo-text{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--navy)}
+.logo-text span{color:var(--gold)}
+.logo-badge{background:var(--gold);color:#FFFFFF;font-size:0.5rem;font-weight:700;padding:2px 6px;border-radius:3px;letter-spacing:0.1em;text-transform:uppercase}
+.nav-links{display:flex;gap:0.15rem;list-style:none}
+.nav-links li{list-style:none}
+.nav-links a{color:var(--navy);text-decoration:none;font-size:0.82rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;padding:0.5rem 0.9rem;border-radius:6px;transition:var(--transition)}
+.nav-links a:hover,.nav-links a.active{color:var(--gold);background:rgba(162,9,52,0.06)}
+.hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;width:42px;height:42px;background:none;border:1px solid rgba(255,255,255,0.15);border-radius:8px;cursor:pointer;gap:5px;padding:0;z-index:10001}
+.hamburger .bar{display:block;width:20px;height:2px;background:var(--navy);border-radius:2px;transition:all 0.3s ease}
+.hamburger.open .bar:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open .bar:nth-child(2){opacity:0}
+.hamburger.open .bar:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mobile-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:9998}
+.mobile-overlay.show{display:block}
+.mobile-menu{position:fixed;top:0;right:-300px;width:280px;height:100vh;background:#FFFFFF;z-index:10000;transition:right 0.35s cubic-bezier(0.4,0,0.2,1);padding:110px 1.5rem 2rem;overflow-y:auto;border-left:1px solid rgba(162,9,52,0.15)}
+.mobile-menu.open{right:0}
+.mobile-menu a{display:block;color:rgba(255,255,255,0.85);text-decoration:none;font-size:1rem;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;padding:1rem 0.8rem;border-bottom:1px solid rgba(255,255,255,0.06);transition:var(--transition);cursor:pointer}
+.mobile-menu a:hover,.mobile-menu a.active{color:var(--gold);background:rgba(162,9,52,0.08);padding-left:1.2rem}
+@media(max-width:960px){.nav-links{display:none!important}.hamburger{display:flex!important}}
+/* ===== HERO ===== */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(160deg,#FFFFFF 0%,var(--cream) 55%,#EDE6E1 100%);padding-top:102px}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 60% 50% at 70% 40%,rgba(162,9,52,0.08) 0%,transparent 60%),radial-gradient(ellipse 40% 60% at 20% 80%,rgba(42,123,136,0.06) 0%,transparent 50%)}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:150px;background:linear-gradient(to top,var(--cream),transparent)}
+.hero-content{max-width:var(--max-width);margin:0 auto;padding:3rem 2rem 6rem;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.hero-left h1{font-family:var(--font-display);font-size:3.6rem;font-weight:600;color:var(--navy);line-height:1.1;margin-bottom:0.5rem}
+.hero-left h1 .accent{color:var(--gold);display:block;font-style:italic}
+.hero-tagline{font-size:1.2rem;color:var(--text-medium);font-weight:300;margin-bottom:2rem;line-height:1.6}
+.hero-cta{display:inline-flex;align-items:center;gap:0.7rem;background:var(--gold);color:#FFFFFF;text-decoration:none;padding:0.9rem 2rem;border-radius:8px;font-weight:600;font-size:0.9rem;transition:var(--transition);cursor:pointer}
+.hero-cta:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(162,9,52,0.3)}
+.hero-right{display:flex;justify-content:center}
+.hero-visual{width:360px;height:360px;border-radius:50%;background:linear-gradient(135deg,rgba(162,9,52,0.15),rgba(43,61,79,0.06));border:1px solid rgba(162,9,52,0.2);display:flex;align-items:center;justify-content:center;position:relative}
+.hero-visual::before{content:'';position:absolute;inset:-20px;border-radius:50%;border:1px solid rgba(162,9,52,0.08)}
+.hero-visual-inner{text-align:center;color:var(--navy)}
+.hero-visual-inner .year{font-family:var(--font-display);font-size:4.5rem;font-weight:700;color:var(--gold);line-height:1}
+.hero-visual-inner .desc{font-size:0.85rem;color:var(--text-medium);margin-top:0.5rem;letter-spacing:0.1em;text-transform:uppercase}
+/* ===== COMMON ===== */
+.section{padding:5rem 2rem;scroll-margin-top:102px}
+.section-inner{max-width:var(--max-width);margin:0 auto}
+.section-label{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--gold);font-weight:600;margin-bottom:0.8rem}
+.section-title{font-family:var(--font-display);font-size:2.6rem;font-weight:600;color:var(--navy);line-height:1.2;margin-bottom:1.5rem}
+.section-text{font-size:1rem;color:var(--text-medium);max-width:720px;line-height:1.8}
+.btn-primary{display:inline-flex;align-items:center;gap:0.6rem;background:var(--navy);color:var(--white);text-decoration:none;padding:0.85rem 1.8rem;border-radius:8px;font-weight:600;font-size:0.88rem;transition:var(--transition);margin-top:1.5rem;cursor:pointer}
+.btn-primary:hover{background:var(--navy-light);transform:translateY(-2px);box-shadow:0 8px 25px rgba(11,29,58,0.2)}
+.btn-gold{background:var(--gold);color:#FFFFFF}.btn-gold:hover{background:var(--gold-light);box-shadow:0 8px 25px rgba(162,9,52,0.3)}
+/* ===== STATS ===== */
+.stats-bar{background:var(--white);padding:2.5rem 2rem;border-bottom:1px solid rgba(0,0,0,0.05)}
+.stats-container{max-width:var(--max-width);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.stat-item{text-align:center}
+.stat-number{font-family:var(--font-display);font-size:2.6rem;font-weight:700;color:var(--navy)}
+.stat-number span{color:var(--gold)}
+.stat-label{font-size:0.8rem;color:var(--text-light);margin-top:0.3rem;text-transform:uppercase;letter-spacing:0.08em}
+/* ===== WHY CARDS ===== */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem}
+.why-card{background:var(--white);border-radius:16px;padding:2.2rem;border:1px solid rgba(0,0,0,0.05);transition:var(--transition);position:relative;overflow:hidden}
+.why-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 0.5s}
+.why-card:hover::before{transform:scaleX(1)}
+.why-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.08)}
+.why-icon{width:52px;height:52px;background:rgba(162,9,52,0.08);border:1px solid rgba(162,9,52,0.18);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:1.3rem}
+.why-icon svg{width:24px;height:24px;color:var(--gold)}
+.why-card h3{font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--navy);margin-bottom:0.7rem}
+.why-card p{color:var(--text-medium);font-size:0.92rem;line-height:1.7}
+/* ===== ABOUT QUOTES ===== */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}
+.about-card{background:var(--white);border-radius:16px;padding:2.2rem;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid rgba(0,0,0,0.05)}
+.about-quote{font-family:var(--font-display);font-size:1.1rem;font-style:italic;color:var(--text-dark);line-height:1.7;padding-left:1.5rem;border-left:3px solid var(--gold)}
+.about-author{margin-top:1.3rem;font-weight:600;color:var(--navy)}
+.about-author span{display:block;font-weight:400;color:var(--text-light);font-size:0.88rem}
+/* ===== CONSULTING ===== */
+#consultoria{background:var(--navy);color:var(--white);position:relative;overflow:hidden}
+#consultoria::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(162,9,52,0.06) 0%,transparent 70%)}
+#consultoria .section-title{color:var(--white)}
+#consultoria .section-text{color:rgba(255,255,255,0.7)}
+.consulting-content{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1}
+.consulting-steps{display:flex;flex-direction:column;gap:1.2rem;margin-top:1.8rem}
+.consulting-step{display:flex;gap:1rem;align-items:flex-start}
+.step-num{min-width:38px;height:38px;background:rgba(162,9,52,0.15);border:1px solid rgba(162,9,52,0.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--gold)}
+.step-text h4{font-size:0.95rem;font-weight:600;margin-bottom:0.15rem}
+.step-text p{font-size:0.85rem;color:rgba(255,255,255,0.6)}
+.consulting-visual{display:flex;justify-content:center;align-items:center}
+.methodology-circle{width:300px;height:300px;border-radius:50%;border:2px solid rgba(162,9,52,0.2);display:flex;align-items:center;justify-content:center;position:relative}
+.methodology-circle::before{content:'';position:absolute;inset:15px;border-radius:50%;border:1px dashed rgba(162,9,52,0.15)}
+.methodology-center{text-align:center}
+.methodology-center .tm-label{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--gold)}
+.methodology-center .tm-name{font-family:var(--font-display);font-size:1.7rem;font-weight:700;color:var(--white);line-height:1.2}
+.methodology-center .tm-sub{font-size:0.82rem;color:rgba(255,255,255,0.5);margin-top:0.3rem}
+/* ===== LEARNING ===== */
+#aprendizado{background:var(--cream)}
+.learning-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;margin-top:2.5rem}
+.learning-card{background:var(--white);border-radius:16px;overflow:hidden;border:1px solid rgba(0,0,0,0.05);transition:var(--transition)}
+.learning-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.08)}
+.learning-card-header{background:linear-gradient(135deg,var(--gold),#8A0729);padding:1.6rem;position:relative;overflow:hidden}
+.learning-card-header::after{content:'';position:absolute;top:-50%;right:-30%;width:200px;height:200px;border-radius:50%;background:rgba(162,9,52,0.08)}
+.learning-card-header h3{font-family:var(--font-display);font-size:1.2rem;font-weight:600;color:var(--white);position:relative;z-index:1}
+.learning-card-header .tag{display:inline-block;background:rgba(255,255,255,0.92);color:var(--gold);font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;padding:0.25rem 0.7rem;border-radius:20px;margin-bottom:0.6rem;position:relative;z-index:1}
+.learning-card-body{padding:1.6rem}
+.learning-card-body p{color:var(--text-medium);font-size:0.9rem;line-height:1.7}
+.learning-meta{display:flex;gap:1.3rem;margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid rgba(0,0,0,0.06)}
+.meta-item{display:flex;align-items:center;gap:0.4rem;font-size:0.78rem;color:var(--text-light)}
+.meta-item svg{width:15px;height:15px;color:var(--gold)}
+/* ===== TALENT ===== */
+#talentos{background:var(--white)}
+.talent-content{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.talent-list{display:flex;flex-direction:column;gap:1rem;margin-top:1.8rem}
+.talent-item{display:flex;gap:1rem;align-items:flex-start;padding:1.1rem;background:var(--cream);border-radius:12px;transition:var(--transition)}
+.talent-item:hover{background:var(--cream-dark)}
+.talent-item-icon{min-width:38px;height:38px;background:rgba(162,9,52,0.08);border:1px solid rgba(162,9,52,0.18);border-radius:10px;display:flex;align-items:center;justify-content:center}
+.talent-item-icon svg{width:18px;height:18px;color:var(--gold)}
+.talent-item h4{font-size:0.95rem;font-weight:600;color:var(--navy);margin-bottom:0.15rem}
+.talent-item p{font-size:0.85rem;color:var(--text-medium)}
+/* ===== MAP SECTION ===== */
+#mapa{background:linear-gradient(180deg,#FFFFFF 0%,var(--cream) 100%);color:var(--text-dark);position:relative;overflow:hidden}
+#mapa::before{content:'';position:absolute;top:10%;right:-5%;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(162,9,52,0.04) 0%,transparent 70%)}
+#mapa .section-title{color:var(--navy)}
+#mapa .section-text{color:var(--text-medium)}
+.map-layout{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2.5rem;position:relative;z-index:1;align-items:start}
+/* SVG Map */
+.map-container{position:relative}
+.map-container svg{width:100%;height:auto;max-height:600px}
+.map-container svg .country-path{fill:rgba(162,9,52,0.10);stroke:rgba(162,9,52,0.45);stroke-width:0.8;transition:fill 0.3s, stroke 0.3s;cursor:pointer;}
+.map-container svg .country-path:hover{fill:rgba(162,9,52,0.3);stroke:var(--gold)}
+.map-container svg .country-path.selected{fill:var(--gold);stroke:var(--gold-light);stroke-width:1.8;filter:drop-shadow(0 0 8px rgba(162,9,52,0.5))}
+.map-container svg .country-path.available{fill:rgba(162,9,52,0.2)}
+.country-label.small{font-size:6.5px}
+.country-label{font-size:10px;fill:rgba(43,61,79,0.65);text-anchor:middle;pointer-events:none;font-family:var(--font-body);font-weight:500}
+.country-label.selected-label{fill:#FFFFFF;font-weight:700}
+/* Country Panel */
+.country-panel{
+background:#FFFFFF;border:1px solid rgba(43,61,79,0.1);box-shadow:0 4px 24px rgba(43,61,79,0.08);
+border-radius:16px;padding:2.5rem;min-height:400px;
+transition:var(--transition);
+}
+.country-panel-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;height:100%;min-height:400px}
+.country-panel-empty svg{width:60px;height:60px;color:rgba(162,9,52,0.3);margin-bottom:1rem}
+.country-panel-empty h3{font-family:var(--font-display);font-size:1.4rem;color:var(--text-medium);margin-bottom:0.5rem}
+.country-panel-empty p{font-size:0.88rem;color:var(--text-light)}
+.panel-content{display:none}
+.panel-content.active{display:block}
+.panel-country-name{font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--gold);margin-bottom:0.3rem}
+.panel-country-region{font-size:0.8rem;color:var(--text-medium);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1.5rem}
+.panel-section{margin-bottom:2rem}
+.panel-section-title{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.15em;color:var(--gold);font-weight:600;margin-bottom:0.8rem;display:flex;align-items:center;gap:0.5rem}
+.panel-section-title svg{width:14px;height:14px}
+.panel-contact-item{display:flex;gap:0.8rem;align-items:center;margin-bottom:0.8rem}
+.panel-contact-item .icon-wrap{width:32px;height:32px;background:rgba(162,9,52,0.1);border:1px solid rgba(162,9,52,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center}
+.panel-contact-item .icon-wrap svg{width:14px;height:14px;color:var(--gold)}
+.panel-contact-item span{font-size:0.88rem;color:var(--text-medium)}
+.panel-contact-item a{color:var(--gold);text-decoration:none}
+.panel-contact-item a:hover{text-decoration:underline}
+.panel-course{background:rgba(162,9,52,0.03);border:1px solid rgba(162,9,52,0.04);border-radius:10px;padding:1rem 1.2rem;margin-bottom:0.8rem;transition:var(--transition)}
+.panel-course:hover{background:rgba(255,255,255,0.07)}
+.panel-course-name{font-weight:600;font-size:0.9rem;color:var(--navy);margin-bottom:0.2rem}
+.panel-course-date{font-size:0.78rem;color:var(--text-light)}
+.panel-course-tag{display:inline-block;background:rgba(162,9,52,0.15);color:var(--gold-light);font-size:0.62rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;padding:2px 8px;border-radius:3px;margin-left:0.5rem}
+.panel-btn{display:inline-flex;align-items:center;gap:0.5rem;background:var(--gold);color:#FFFFFF;border:none;padding:0.7rem 1.5rem;border-radius:8px;font-weight:600;font-size:0.85rem;cursor:pointer;transition:var(--transition);margin-top:0.5rem;font-family:var(--font-body)}
+.panel-btn:hover{background:var(--gold-light);transform:translateY(-1px)}
+/* ===== INSIGHTS ===== */
+#insights{background:var(--cream)}
+.insights-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;margin-top:2.5rem}
+.insight-card{background:var(--white);border-radius:16px;overflow:hidden;border:1px solid rgba(0,0,0,0.05);transition:var(--transition)}
+.insight-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.08)}
+.insight-card-color{height:5px;background:linear-gradient(90deg,var(--gold),var(--accent-teal))}
+.insight-card-body{padding:1.8rem}
+.insight-card-body .cat{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--gold);font-weight:600;margin-bottom:0.7rem}
+.insight-card-body h3{font-family:var(--font-display);font-size:1.2rem;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:0.7rem}
+.insight-card-body p{font-size:0.88rem;color:var(--text-medium);line-height:1.7}
+/* ===== CONTACT ===== */
+#contato{background:linear-gradient(180deg,var(--cream) 0%,#EDE6E1 100%);color:var(--text-dark);position:relative;overflow:hidden}
+#contato::before{content:'';position:absolute;bottom:-30%;left:-10%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(162,9,52,0.05) 0%,transparent 70%)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;position:relative;z-index:1}
+.contact-info{display:flex;flex-direction:column;gap:1.8rem;margin-top:1.8rem}
+.contact-item{display:flex;gap:1rem;align-items:flex-start}
+.contact-item-icon{min-width:42px;height:42px;background:rgba(162,9,52,0.1);border:1px solid rgba(162,9,52,0.2);border-radius:12px;display:flex;align-items:center;justify-content:center}
+.contact-item-icon svg{width:18px;height:18px;color:var(--gold)}
+.contact-item h4{font-size:0.9rem;font-weight:600;margin-bottom:0.15rem}
+.contact-item p{font-size:0.88rem;color:rgba(255,255,255,0.6)}
+.contact-item a{color:var(--gold);text-decoration:none}
+.contact-item a:hover{text-decoration:underline}
+.contact-form{background:#FFFFFF;border:1px solid rgba(43,61,79,0.1);box-shadow:0 4px 24px rgba(43,61,79,0.08);border-radius:16px;padding:2.5rem}
+.contact-form h3{font-family:var(--font-display);font-size:1.4rem;margin-bottom:1.3rem}
+.form-group{margin-bottom:1rem}
+.form-group label{display:block;font-size:0.8rem;font-weight:500;margin-bottom:0.35rem;color:var(--text-medium)}
+.form-group input,.form-group textarea,.form-group select{width:100%;background:#FBFAF9;border:1px solid rgba(43,61,79,0.15);color:var(--text-dark);padding:0.75rem 1rem;border-radius:8px;font-size:0.9rem;font-family:var(--font-body);transition:border-color 0.3s}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--gold);background:#FFFFFF}
+.form-group select option{background:#FFFFFF;color:var(--text-dark)}
+.form-group textarea{resize:vertical;min-height:90px}
+.form-submit{background:var(--gold);color:#FFFFFF;border:none;padding:0.85rem 2rem;border-radius:8px;font-weight:600;font-size:0.92rem;cursor:pointer;transition:var(--transition);width:100%}
+.form-submit:hover{background:var(--gold-light);box-shadow:0 6px 20px rgba(162,9,52,0.3)}
+/* ===== NEWSLETTER ===== */
+.newsletter{background:linear-gradient(135deg,var(--cream-dark),var(--cream));padding:3.5rem 2rem;text-align:center}
+.newsletter-inner{max-width:550px;margin:0 auto}
+.newsletter h2{font-family:var(--font-display);font-size:1.8rem;color:var(--navy);margin-bottom:0.7rem}
+.newsletter p{color:var(--text-medium);margin-bottom:1.3rem;font-size:0.95rem}
+.newsletter-form{display:flex;gap:0.7rem}
+.newsletter-form input{flex:1;background:#FFFFFF;border:1px solid rgba(43,61,79,0.15);color:var(--text-dark);padding:0.75rem 1.1rem;border-radius:8px;font-size:0.88rem;font-family:var(--font-body)}
+.newsletter-form input:focus{outline:none;border-color:var(--gold)}
+.newsletter-form button{background:var(--gold);color:#FFFFFF;border:none;padding:0.75rem 1.6rem;border-radius:8px;font-weight:600;font-size:0.88rem;cursor:pointer;transition:var(--transition);font-family:var(--font-body)}
+.newsletter-form button:hover{background:var(--navy-light)}
+/* ===== FOOTER ===== */
+.footer{background:#1E2B38;padding:2.5rem 2rem 1.8rem;border-top:1px solid rgba(162,9,52,0.1)}
+.footer-inner{max-width:var(--max-width);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+.footer-left{color:rgba(255,255,255,0.4);font-size:0.82rem}
+.footer-links{display:flex;gap:1.3rem}
+.footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.82rem;transition:var(--transition);cursor:pointer}
+.footer-links a:hover{color:var(--gold)}
+.fade-up{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+@media(max-width:1024px){
+.hero-content{grid-template-columns:1fr;text-align:center}
+.hero-right{display:none}
+.hero-left h1{font-size:2.8rem}
+.about-grid,.consulting-content,.talent-content,.contact-grid,.map-layout{grid-template-columns:1fr}
+.why-grid{grid-template-columns:1fr 1fr}
+.consulting-visual{order:-1}
+}
+@media(max-width:768px){
+.hero-left h1{font-size:2.2rem}
+.section-title{font-size:2rem}
+.stats-container{grid-template-columns:repeat(2,1fr)}
+.why-grid,.learning-grid,.insights-grid{grid-template-columns:1fr}
+.newsletter-form{flex-direction:column}
+.footer-inner{flex-direction:column;gap:1rem;text-align:center}
+.section{padding:3.5rem 1.5rem}
+.lang-bar{padding:0 1rem;justify-content:center}
+}
+/* WhatsApp Float */
+.wpp-float{position:fixed;bottom:24px;right:24px;z-index:9999;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 15px rgba(37,211,102,0.4);transition:all 0.3s;text-decoration:none}
+.wpp-float:hover{transform:scale(1.1);box-shadow:0 6px 25px rgba(37,211,102,0.5)}
+.wpp-float svg{width:32px;height:32px;fill:#fff}
+.wpp-float .wpp-tip{position:absolute;right:72px;background:#fff;color:#333;padding:8px 14px;border-radius:8px;font-size:0.82rem;font-weight:500;white-space:nowrap;box-shadow:0 2px 12px rgba(0,0,0,0.15);opacity:0;transform:translateX(10px);transition:all 0.3s;pointer-events:none}
+.wpp-float:hover .wpp-tip{opacity:1;transform:translateX(0)}
+@media(max-width:768px){.wpp-float{bottom:16px;right:16px;width:54px;height:54px}.wpp-float svg{width:28px;height:28px}}
+/* Partner Block */
+.partner-block{margin-top:2.5rem;padding:2rem;background:#FFFFFF;border:1px solid rgba(43,61,79,0.1);box-shadow:0 4px 24px rgba(43,61,79,0.06);border-radius:16px}
+.partner-block-header{display:flex;align-items:center;gap:0.6rem;margin-bottom:1.2rem}
+.partner-block-header .plabel{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.15em;color:var(--gold);font-weight:600}
+.partner-logo-row{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.partner-logo-row img{height:48px;width:auto;opacity:0.92;transition:opacity 0.3s}
+.partner-logo-row img:hover{opacity:1}
+.partner-info .pname{font-family:var(--font-display);font-size:1.15rem;font-weight:600;color:var(--navy)}
+.partner-info .prole{font-size:0.78rem;color:var(--text-light)}
+.partner-contact-row{display:flex;gap:2rem;margin-top:1rem;flex-wrap:wrap}
+.pci{display:flex;align-items:center;gap:0.5rem;font-size:0.85rem;color:var(--text-medium)}
+.pci svg{width:15px;height:15px;color:var(--gold);flex-shrink:0}
+.pci a{color:var(--gold);text-decoration:none}
+.map-container svg .country-path:focus{outline:none;fill:rgba(162,9,52,0.35);stroke:var(--gold);stroke-width:1.5}
+.map-hint{text-align:center;font-size:0.85rem;color:var(--text-light);margin-bottom:1rem;font-style:italic}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+</style>
+</head>
+<body>
+<!-- LANGUAGE BAR -->
+<div class="lang-bar">
+<span class="lang-label" data-i18n-static="lang_label">Idioma:</span>
+<div class="lang-options">
+<button class="lang-btn active" onclick="setLang('pt')" id="langPt">Português</button>
+<span class="lang-sep">|</span>
+<button class="lang-btn" onclick="setLang('es')" id="langEs">Español</button>
+</div>
+</div>
+<!-- HEADER -->
+<header class="header" id="header">
+<nav class="nav-container">
+<a class="logo" onclick="goTo('inicio')">
+<div><div class="logo-text">La<span>Marsh</span></div></div>
+<div class="logo-badge">LATAM</div>
+</a>
+<ul class="nav-links">
+<li><a onclick="goTo('inicio')" data-section="inicio" class="active" data-i18n="nav_home"></a></li>
+<li><a onclick="goTo('sobre')" data-section="sobre" data-i18n="nav_about"></a></li>
+<li><a onclick="goTo('consultoria')" data-section="consultoria" data-i18n="nav_consulting"></a></li>
+<li><a onclick="goTo('aprendizado')" data-section="aprendizado" data-i18n="nav_learning"></a></li>
+<li><a onclick="goTo('mapa')" data-section="mapa" data-i18n="nav_map"></a></li>
+<li><a onclick="goTo('insights')" data-section="insights" data-i18n="nav_insights"></a></li>
+<li><a onclick="goTo('contato')" data-section="contato" data-i18n="nav_contact"></a></li>
+</ul>
+<button class="hamburger" id="hamburger" onclick="toggleMobile()"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+</nav>
+</header>
+<div class="mobile-overlay" id="mobileOverlay" onclick="closeMobile()"></div>
+<nav class="mobile-menu" id="mobileMenu">
+<a onclick="goTo('inicio')" data-section="inicio" data-i18n="nav_home"></a>
+<a onclick="goTo('sobre')" data-section="sobre" data-i18n="nav_about"></a>
+<a onclick="goTo('consultoria')" data-section="consultoria" data-i18n="nav_consulting"></a>
+<a onclick="goTo('aprendizado')" data-section="aprendizado" data-i18n="nav_learning"></a>
+<a onclick="goTo('mapa')" data-section="mapa" data-i18n="nav_map"></a>
+<a onclick="goTo('insights')" data-section="insights" data-i18n="nav_insights"></a>
+<a onclick="goTo('contato')" data-section="contato" data-i18n="nav_contact"></a>
+</nav>
+<!-- HERO -->
+<section class="hero" id="inicio">
+<div class="hero-content">
+<div class="hero-left">
+<h1 data-i18n-html="hero_title"></h1>
+<p class="hero-tagline" data-i18n-html="hero_tagline"></p>
+<a class="hero-cta" onclick="goTo('mapa')" data-i18n="hero_cta"></a>
+</div>
+<div class="hero-right">
+<div class="hero-visual"><div class="hero-visual-inner"><div class="year">1979</div><div class="desc" data-i18n="hero_since"></div></div></div>
+</div>
+</div>
+</section>
+<!-- STATS -->
+<div class="stats-bar">
+<div class="stats-container">
+<div class="stat-item fade-up"><div class="stat-number">45<span>+</span></div><div class="stat-label" data-i18n="stat_years"></div></div>
+<div class="stat-item fade-up"><div class="stat-number">500<span>+</span></div><div class="stat-label" data-i18n="stat_orgs"></div></div>
+<div class="stat-item fade-up"><div class="stat-number">30<span>+</span></div><div class="stat-label" data-i18n="stat_countries"></div></div>
+<div class="stat-item fade-up"><div class="stat-number">95<span>%</span></div><div class="stat-label" data-i18n="stat_satisfaction"></div></div>
+</div>
+</div>
+<!-- SOBRE -->
+<section class="section" id="sobre">
+<div class="section-inner">
+<div class="section-label" data-i18n="about_label"></div>
+<div class="section-title" data-i18n="about_title"></div>
+<div class="section-text" data-i18n-html="about_text"></div>
+<div class="why-grid">
+<div class="why-card fade-up">
+<div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<h3 data-i18n="why_complete_title"></h3><p data-i18n="why_complete_text"></p>
+</div>
+<div class="why-card fade-up">
+<div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+<h3 data-i18n="why_universal_title"></h3><p data-i18n="why_universal_text"></p>
+</div>
+<div class="why-card fade-up">
+<div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+<h3 data-i18n="why_scalable_title"></h3><p data-i18n="why_scalable_text"></p>
+</div>
+</div>
+<div class="about-grid">
+<div class="about-card fade-up">
+<div class="about-quote" data-i18n="quote_kreuser"></div>
+<div class="about-author">Christine Kreuser<span>CEO & Owner — LaMarsh Global</span></div>
+</div>
+<div class="about-card fade-up">
+<div class="about-quote" data-i18n="quote_fasick"></div>
+<div class="about-author">Marisue Fasick<span data-i18n="vp_label"></span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONSULTORIA -->
+<section class="section" id="consultoria">
+<div class="section-inner">
+<div class="consulting-content">
+<div>
+<div class="section-label" data-i18n="consulting_label"></div>
+<div class="section-title" data-i18n="consulting_title"></div>
+<div class="section-text" data-i18n-html="consulting_text"></div>
+<div class="consulting-steps fade-up" id="consultingSteps"></div>
+<a class="btn-primary btn-gold" onclick="goTo('contato')" style="margin-top:1.8rem" data-i18n="consulting_cta"></a>
+</div>
+<div class="consulting-visual fade-up">
+<div class="methodology-circle"><div class="methodology-center">
+<div class="tm-label" data-i18n="method_label"></div>
+<div class="tm-name">Managed<br>Change™</div>
+<div class="tm-sub" data-i18n="method_sub"></div>
+</div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- APRENDIZADO -->
+<section class="section" id="aprendizado">
+<div class="section-inner">
+<div class="section-label" data-i18n="learning_label"></div>
+<div class="section-title" data-i18n="learning_title"></div>
+<div class="section-text" data-i18n="learning_text"></div>
+<div class="learning-grid" id="learningGrid"></div>
+<a class="btn-primary" onclick="goTo('mapa')" style="margin-top:1.8rem" data-i18n="learning_cta"></a>
+</div>
+</section>
+<!-- MAP SECTION -->
+<section class="section" id="mapa">
+<div class="section-inner">
+<div class="section-label" data-i18n="map_label"></div>
+<div class="section-title" data-i18n="map_title"></div>
+<div class="section-text" data-i18n="map_text"></div>
+<div class="map-layout">
+<p class="map-hint" data-i18n="map_hint"></p>
+<div class="map-container" id="mapContainer"></div>
+<div class="country-panel" id="countryPanel">
+<div class="country-panel-empty" id="panelEmpty">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+<h3 data-i18n="map_panel_empty_title"></h3>
+<p data-i18n="map_panel_empty_text"></p>
+</div>
+<div class="panel-content" id="panelContent">
+<div class="panel-country-name" id="panelCountryName"></div>
+<div class="panel-country-region" id="panelCountryRegion"></div>
+<div class="panel-section">
+<div class="panel-section-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg> <span data-i18n="panel_contact_title"></span></div>
+<div id="panelContactInfo"></div>
+</div>
+<div class="panel-section">
+<div class="panel-section-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> <span data-i18n="panel_courses_title"></span></div>
+<div id="panelCourses"></div>
+</div>
+<button class="panel-btn" onclick="goTo('contato')" data-i18n="panel_cta"></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INSIGHTS -->
+<section class="section" id="insights">
+<div class="section-inner">
+<div class="section-label">Insights</div>
+<div class="section-title" data-i18n="insights_title"></div>
+<div class="section-text" data-i18n="insights_text"></div>
+<div class="insights-grid" id="insightsGrid"></div>
+</div>
+</section>
+<!-- NEWSLETTER -->
+<div class="newsletter">
+<div class="newsletter-inner">
+<h2 data-i18n="newsletter_title"></h2>
+<p data-i18n="newsletter_text"></p>
+<form class="newsletter-form" onsubmit="event.preventDefault();alert(i18n[currentLang].newsletter_thanks);">
+<input type="email" data-i18n-placeholder="newsletter_placeholder" required>
+<button type="submit" data-i18n="newsletter_btn"></button>
+</form>
+</div>
+</div>
+<!-- CONTATO -->
+<section class="section" id="contato">
+<div class="section-inner">
+<div class="contact-grid">
+<div>
+<div class="section-label" data-i18n="contact_label"></div>
+<div class="section-title" data-i18n="contact_title"></div>
+<div class="section-text" data-i18n="contact_text"></div>
+<div class="contact-info">
+<div class="contact-item"><div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><h4 data-i18n="contact_phone_label"></h4><p><a href="tel:+5511981330567" style="color:inherit;text-decoration:none">+55 11 98133-0567</a></p></div></div>
+<div class="contact-item"><div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></div><div><h4>E-mail</h4><p><a href="mailto:LaMarshLA@collabz.com.br">LaMarshLA@collabz.com.br</a></p></div></div>
+<div class="contact-item"><div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div><div><h4 data-i18n="contact_social_label"></h4><p><a href="https://www.linkedin.com/company/lamarshglobal/" target="_blank" data-i18n="contact_linkedin"></a></p></div></div>
+</div>
+<div class="partner-block fade-up">
+<div class="partner-block-header">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;color:var(--gold)"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+<span class="plabel" data-i18n="partner_label"></span>
+</div>
+<div class="partner-logo-row">
+<a href="https://collabz.manus.space/" target="_blank"><img src="logo-collabz.png" alt="collab:Z"></a>
+<div class="partner-info"><div class="pname">collab:Z</div><div class="prole" data-i18n="partner_role"></div></div>
+</div>
+<div class="partner-contact-row">
+<div class="pci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg><a href="mailto:LaMarshLA@collabz.com.br">LaMarshLA@collabz.com.br</a></div>
+<div class="pci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+5511981330567">+55 11 98133-0567</a></div>
+</div>
+</div>
+</div>
+<div class="contact-form fade-up">
+<h3 data-i18n="form_title"></h3>
+<form onsubmit="submitForm(event)">
+<div class="form-group"><label data-i18n="form_name"></label><input type="text" required data-i18n-placeholder="form_name_ph"></div>
+<div class="form-group"><label>E-mail</label><input type="email" required placeholder="seu@email.com"></div>
+<div class="form-group"><label data-i18n="form_company"></label><input type="text" data-i18n-placeholder="form_company_ph"></div>
+<div class="form-group"><label data-i18n="form_country_label"></label>
+<select id="formCountry">
+<option value="BR">Brasil</option><option value="MX">México</option><option value="CO">Colombia</option><option value="AR">Argentina</option><option value="CL">Chile</option><option value="PE">Perú</option><option value="EC">Ecuador</option><option value="UY">Uruguay</option><option value="PY">Paraguay</option><option value="BO">Bolivia</option><option value="VE">Venezuela</option><option value="CR">Costa Rica</option><option value="PA">Panamá</option><option value="GT">Guatemala</option><option value="DO">Rep. Dominicana</option><option value="HN">Honduras</option><option value="SV">El Salvador</option><option value="NI">Nicaragua</option><option value="CU">Cuba</option>
+</select>
+</div>
+<div class="form-group"><label data-i18n="form_message"></label><textarea data-i18n-placeholder="form_message_ph"></textarea></div>
+<button type="submit" class="form-submit" data-i18n="form_submit"></button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer-inner">
+<div class="footer-left">&copy; 2025 LaMarsh Global — América Latina</div>
+<div class="footer-links">
+<a onclick="goTo('inicio')" data-i18n="nav_home"></a>
+<a onclick="goTo('sobre')" data-i18n="nav_about"></a>
+<a onclick="goTo('consultoria')" data-i18n="nav_consulting"></a>
+<a onclick="goTo('mapa')" data-i18n="nav_map"></a>
+<a onclick="goTo('contato')" data-i18n="nav_contact"></a>
+</div>
+</div>
+</footer>
+<script>
+// ======== I18N SYSTEM ========
+var currentLang = 'pt';
+var i18n = {
+pt: {
+lang_label: "Idioma:",
+nav_home:"Início",nav_about:"Sobre Nós",nav_consulting:"Consultoria",nav_learning:"Aprendizado",nav_map:"Atuação",nav_insights:"Insights",nav_contact:"Contato",
+hero_title:'Transformação<span class="accent">para a América Latina</span>',
+hero_tagline:'Focados em pessoas. Impulsionando organizações.<br>Pioneiros em gestão de mudanças desde 1979.',
+hero_cta:"Explore Nossa Atuação",hero_since:"Liderando a gestão\nde mudanças global",
+stat_years:"Anos de Experiência",stat_orgs:"Organizações Atendidas",stat_countries:"Países",stat_satisfaction:"Taxa de Satisfação",
+about_label:"Quem Somos",about_title:"Sua Parceira em Transformação",
+about_text:'Fundada em 1979 por Jeanenne LaMarsh, a <strong>LaMarsh Global</strong> está na vanguarda da gestão de mudanças, ajudando organizações a implementar transformações ao abordar os elementos humanos. Ao longo de mais de quatro décadas, a empresa culminou no <strong>Modelo Managed Change™</strong> — uma metodologia projetada para identificar, analisar e superar a resistência à mudança.',
+why_complete_title:"Completo",why_complete_text:"Gerencia riscos, metas e fluxos de trabalho em todo o ciclo com um objetivo claro: resultados realizados.",
+why_universal_title:"Universal",why_universal_text:"Construído para todos os tipos de mudança, focando na transformação comportamental e em resultados.",
+why_scalable_title:"Escalável",why_scalable_text:"Dimensionado para qualquer iniciativa, desde melhorias pontuais até transformações em toda a empresa.",
+quote_kreuser:'"A mudança entrega valor no momento em que as pessoas decidem trabalhar de uma nova forma — não quando o documento de estratégia é publicado ou o sistema entra no ar."',
+quote_fasick:'"Posso atestar o significativo sucesso e os benefícios de negócio tangíveis que o Managed Change™ entrega, de grandes corporações a startups e ONGs."',
+vp_label:"Vice-Presidente — LaMarsh Global",
+consulting_label:"Consultoria",consulting_title:"Desenhando o Caminho para Resultados Sustentáveis",
+consulting_text:'Nossos especialistas aplicam a comprovada metodologia <strong>Managed Change™</strong> para avaliar seu estado atual, definir seu futuro desejado e desenhar o caminho mais eficiente.',
+consulting_steps:[{t:"Identificar a Mudança",d:"Compreender o que está mudando e por quê."},{t:"Analisar o Risco",d:"Identificar onde as pessoas podem ter dificuldades."},{t:"Planejar a Mitigação",d:"Criar estratégias focadas nos impactados."},{t:"Monitorar o Progresso",d:"Acompanhar resultados e ajustar em tempo real."},{t:"Sustentar a Mudança",d:"Garantir adoção duradoura e resultados mensuráveis."}],
+consulting_cta:"Saiba Como Podemos Ajudar",method_label:"Metodologia",method_sub:"5 Etapas Comprovadas",
+learning_label:"Aprendizado",learning_title:"Experiências Imersivas de Aprendizagem",
+learning_text:"Educação abrangente em gestão de mudanças para liderar e impulsionar transformações, com experiências presenciais e virtuais.",
+learning_cards:[
+{tag:"Workshop Virtual",title:"Workshop Managed Change™",text:"Workshop prático de cinco sessões. Aplique ferramentas comprovadas a um projeto real seu.",m1:"5 Sessões",m2:"4,5h/sessão"},
+{tag:"Presencial",title:"Masters of Managed Change™",text:"Programa intensivo presencial com certificação para dominar a metodologia.",m1:"Programa Completo",m2:"Certificação"},
+{tag:"In-Company",title:"Gestão de Mudanças para Líderes de Projetos",text:"Workshop especializado para integrar gestão de mudanças em projetos.",m1:"In-Company",m2:"Personalizado"},
+{tag:"Coaching",title:"Coaching de Patrocínio de Mudança",text:"Sessões individuais para executivos ativarem o patrocínio efetivo.",m1:"Individual",m2:"Executivos"}
+],
+learning_cta:"Ver Agenda por País",
+map_label:"Atuação Regional",map_title:"Escolha Seu País",map_text:"Clique em um país para ver contato local e agenda de cursos.",
+map_panel_empty_title:"Selecione um País",map_panel_empty_text:"Clique no mapa para ver informações",
+panel_contact_title:"Contato Local",panel_courses_title:"Agenda de Cursos",panel_cta:"Solicitar Informações",
+panel_no_courses:"Agenda em breve. Entre em contato para saber mais.",
+insights_title:"Conhecimento que Impulsiona Resultados",insights_text:"Insights práticos para profissionais de mudança navegarem desafios complexos.",
+insight_cards:[
+{cat:"Para Profissionais",title:"Se Você Só Tem Tempo Para Três Coisas ao Iniciar um Projeto de Mudança...",text:"Identifique a mudança, analise e mitigue o risco focando nos impactados."},
+{cat:"Para Líderes",title:"Como Descobrir o que os Impactados Realmente Sentem Sobre a Mudança",text:"Compreender como as pessoas se sentem é a chave para reduzir riscos."},
+{cat:"Para Patrocinadores",title:"Como Transformar Líderes em Patrocinadores Efetivos",text:"Líderes concordam com a mudança, mas não sabem como patrociná-la ativamente."}
+],
+newsletter_title:"Inscreva-se",newsletter_text:"Receba novidades e insights sobre gestão de mudanças na América Latina.",
+newsletter_placeholder:"Seu e-mail",newsletter_btn:"Inscrever",newsletter_thanks:"Obrigado por se inscrever!",
+contact_label:"Contato",contact_title:"Tem Perguntas?",
+contact_text:"Nossos especialistas estão prontos para ajudar você a encontrar o melhor caminho para sua organização.",
+contact_phone_label:"Telefone",contact_social_label:"Redes Sociais",contact_linkedin:"Siga-nos no LinkedIn",
+form_title:"Envie uma Mensagem",form_name:"Nome Completo",form_name_ph:"Seu nome",form_company:"Empresa",form_company_ph:"Nome da empresa",form_country_label:"País",form_message:"Mensagem",form_message_ph:"Como podemos ajudar?",form_submit:"Enviar Mensagem",form_success:"Mensagem enviada! Entraremos em contato em breve.",wpp_tip:"Fale conosco pelo WhatsApp",notify_txt:"Seja o primeiro a saber quando abrirmos turmas neste país:",notify_ph:"Seu melhor e-mail",notify_btn:"Avise-me",notify_ok:"Pronto! Você será notificado quando houver cursos.",partner_label:"Representante Regional",partner_role:"Innovation & Strategy — Representante LaMarsh LATAM",map_hint:"Clique em um país para ver cursos e contatos",map_hint:"Clique em um país para ver cursos e contatos"
+},
+es: {
+lang_label: "Idioma:",
+nav_home:"Inicio",nav_about:"Nosotros",nav_consulting:"Consultoría",nav_learning:"Aprendizaje",nav_map:"Actuación",nav_insights:"Insights",nav_contact:"Contacto",
+hero_title:'Transformación<span class="accent">para América Latina</span>',
+hero_tagline:'Enfocados en las personas. Potenciando organizaciones.<br>Pioneros en gestión del cambio desde 1979.',
+hero_cta:"Explore Nuestra Actuación",hero_since:"Liderando la gestión\ndel cambio global",
+stat_years:"Años de Experiencia",stat_orgs:"Organizaciones Atendidas",stat_countries:"Países",stat_satisfaction:"Tasa de Satisfacción",
+about_label:"Quiénes Somos",about_title:"Su Socia en Transformación",
+about_text:'Fundada en 1979 por Jeanenne LaMarsh, <strong>LaMarsh Global</strong> está a la vanguardia de la gestión del cambio, ayudando a organizaciones a implementar transformaciones abordando los elementos humanos. A lo largo de más de cuatro décadas, la empresa desarrolló el <strong>Modelo Managed Change™</strong> — una metodología diseñada para identificar, analizar y superar la resistencia al cambio.',
+why_complete_title:"Completo",why_complete_text:"Gestiona riesgos, metas y flujos de trabajo en todo el ciclo con un objetivo claro: resultados realizados.",
+why_universal_title:"Universal",why_universal_text:"Construido para todos los tipos de cambio, enfocándose en la transformación del comportamiento y en resultados.",
+why_scalable_title:"Escalable",why_scalable_text:"Dimensionado para cualquier iniciativa, desde mejoras puntuales hasta transformaciones empresariales.",
+quote_kreuser:'"El cambio entrega valor en el momento en que las personas deciden trabajar de una nueva forma — no cuando el documento de estrategia se publica o el sistema entra en producción."',
+quote_fasick:'"Puedo atestiguar el significativo éxito y los beneficios tangibles que Managed Change™ entrega, desde grandes corporaciones hasta startups y ONGs."',
+vp_label:"Vicepresidenta — LaMarsh Global",
+consulting_label:"Consultoría",consulting_title:"Diseñando el Camino Hacia Resultados Sostenibles",
+consulting_text:'Nuestros expertos aplican la probada metodología <strong>Managed Change™</strong> para evaluar su estado actual, definir su futuro deseado y diseñar el camino más eficiente.',
+consulting_steps:[{t:"Identificar el Cambio",d:"Comprender qué está cambiando y por qué."},{t:"Analizar el Riesgo",d:"Identificar dónde las personas pueden tener dificultades."},{t:"Planificar la Mitigación",d:"Crear estrategias enfocadas en los impactados."},{t:"Monitorear el Progreso",d:"Seguir resultados y ajustar en tiempo real."},{t:"Sostener el Cambio",d:"Garantizar adopción duradera y resultados medibles."}],
+consulting_cta:"Sepa Cómo Podemos Ayudar",method_label:"Metodología",method_sub:"5 Etapas Probadas",
+learning_label:"Aprendizaje",learning_title:"Experiencias Inmersivas de Aprendizaje",
+learning_text:"Educación integral en gestión del cambio para liderar e impulsar transformaciones, con experiencias presenciales y virtuales.",
+learning_cards:[
+{tag:"Workshop Virtual",title:"Workshop Managed Change™",text:"Workshop práctico de cinco sesiones. Aplique herramientas probadas a un proyecto real suyo.",m1:"5 Sesiones",m2:"4,5h/sesión"},
+{tag:"Presencial",title:"Masters of Managed Change™",text:"Programa intensivo presencial con certificación para dominar la metodología.",m1:"Programa Completo",m2:"Certificación"},
+{tag:"In-Company",title:"Gestión del Cambio para Líderes de Proyectos",text:"Workshop especializado para integrar gestión del cambio en proyectos.",m1:"In-Company",m2:"Personalizado"},
+{tag:"Coaching",title:"Coaching de Patrocinio del Cambio",text:"Sesiones individuales para ejecutivos para activar el patrocinio efectivo.",m1:"Individual",m2:"Ejecutivos"}
+],
+learning_cta:"Ver Agenda por País",
+map_label:"Actuación Regional",map_title:"Elija Su País",map_text:"Haga clic en un país para ver contacto local y agenda de cursos.",
+map_panel_empty_title:"Seleccione un País",map_panel_empty_text:"Haga clic en el mapa para ver información",
+panel_contact_title:"Contacto Local",panel_courses_title:"Agenda de Cursos",panel_cta:"Solicitar Información",
+panel_no_courses:"Agenda disponible pronto. Contáctenos para más información.",
+insights_title:"Conocimiento que Impulsa Resultados",insights_text:"Insights prácticos para profesionales del cambio que enfrentan desafíos complejos.",
+insight_cards:[
+{cat:"Para Profesionales",title:"Si Solo Tiene Tiempo Para Tres Cosas al Iniciar un Proyecto de Cambio...",text:"Identifique el cambio, analice y mitigue el riesgo enfocándose en los impactados."},
+{cat:"Para Líderes",title:"Cómo Descubrir lo que los Impactados Realmente Sienten Sobre el Cambio",text:"Comprender cómo se sienten las personas es la clave para reducir riesgos."},
+{cat:"Para Patrocinadores",title:"Cómo Transformar Líderes en Patrocinadores Efectivos",text:"Los líderes concuerdan con el cambio, pero no saben cómo patrocinarlo activamente."}
+],
+newsletter_title:"Suscríbase",newsletter_text:"Reciba novedades e insights sobre gestión del cambio en América Latina.",
+newsletter_placeholder:"Su correo electrónico",newsletter_btn:"Suscribirse",newsletter_thanks:"¡Gracias por suscribirse!",
+contact_label:"Contacto",contact_title:"¿Tiene Preguntas?",
+contact_text:"Nuestros expertos están listos para ayudarle a encontrar el mejor camino para su organización.",
+contact_phone_label:"Teléfono",contact_social_label:"Redes Sociales",contact_linkedin:"Síganos en LinkedIn",
+form_title:"Envíe un Mensaje",form_name:"Nombre Completo",form_name_ph:"Su nombre",form_company:"Empresa",form_company_ph:"Nombre de la empresa",form_country_label:"País",form_message:"Mensaje",form_message_ph:"¿Cómo podemos ayudar?",form_submit:"Enviar Mensaje",form_success:"¡Mensaje enviado! Le contactaremos pronto.",wpp_tip:"Contáctenos por WhatsApp",notify_txt:"Sea el primero en saber cuando abramos clases aquí:",notify_ph:"Su mejor e-mail",notify_btn:"Avíseme",notify_ok:"¡Listo! Le notificaremos cuando haya cursos.",partner_label:"Representante Regional",partner_role:"Innovation & Strategy — Representante LaMarsh LATAM",map_hint:"Haga clic en un país para ver cursos y contactos"
+}
+};
+// ======== COUNTRY DATA ========
+var countries = {
+BR:{name:"Brasil",region:{pt:"América do Sul",es:"América del Sur"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[{name:"Workshop Managed Change™",date:"Mai 2026",tag:"Virtual"},{name:"Masters of Managed Change™",date:"Jul 2026",tag:{pt:"Presencial",es:"Presencial"}}]},
+MX:{name:"México",region:{pt:"América do Norte",es:"América del Norte"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[{name:"Workshop Managed Change™",date:"Jun 2026",tag:"Virtual"}]},
+CO:{name:"Colombia",region:{pt:"América do Sul",es:"América del Sur"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[{name:"Workshop Managed Change™",date:"Ago 2026",tag:"Virtual"}]},
+AR:{name:"Argentina",region:{pt:"América do Sul",es:"América del Sur"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+CL:{name:"Chile",region:{pt:"América do Sul",es:"América del Sur"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[{name:"Workshop Managed Change™",date:"Set 2026",tag:"Virtual"}]},
+PE:{name:"Perú",region:{pt:"América do Sul",es:"América del Sur"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+EC:{name:"Ecuador",region:{pt:"América do Sul",es:"América del Sur"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+VE:{name:"Venezuela",region:{pt:"América do Sul",es:"América del Sur"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+UY:{name:"Uruguay",region:{pt:"América do Sul",es:"América del Sur"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+PY:{name:"Paraguay",region:{pt:"América do Sul",es:"América del Sur"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+BO:{name:"Bolivia",region:{pt:"América do Sul",es:"América del Sur"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+CR:{name:"Costa Rica",region:{pt:"América Central",es:"América Central"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+PA:{name:"Panamá",region:{pt:"América Central",es:"América Central"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+GT:{name:"Guatemala",region:{pt:"América Central",es:"América Central"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+DO:{name:"Rep. Dominicana",region:{pt:"Caribe",es:"Caribe"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+HN:{name:"Honduras",region:{pt:"América Central",es:"América Central"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+SV:{name:"El Salvador",region:{pt:"América Central",es:"América Central"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+NI:{name:"Nicaragua",region:{pt:"América Central",es:"América Central"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]},
+CU:{name:"Cuba",region:{pt:"Caribe",es:"Caribe"},email:"LaMarshLA@collabz.com.br",phone:"+55 11 98133-0567",courses:[]}
+};
+// ======== SVG MAP (simplified Latin America) ========
+function buildMap(){
+var P={"AR":"M275.0,531.5L270.0,532.0L267.4,528.8L264.2,528.5L258.6,528.5L258.6,508.7L260.6,512.7L263.2,519.3L270.0,524.7L277.4,527.0L275.0,531.5Z M277.8,301.9L280.9,306.0L282.9,301.4L288.9,301.7L289.7,302.9L299.4,312.2L303.7,313.0L310.1,317.3L315.5,319.5L316.2,322.1L311.0,331.0L316.3,332.6L322.2,333.5L326.4,332.5L331.1,328.0L332.0,322.9L334.6,321.8L337.2,325.1L337.1,329.8L332.7,333.1L329.1,335.5L323.2,341.3L316.2,349.5L314.9,354.3L313.5,360.6L313.6,366.8L312.5,368.2L312.0,372.3L311.7,375.6L318.3,381.1L317.6,385.5L320.9,388.3L320.6,391.5L315.6,400.0L307.8,403.6L297.3,405.0L291.6,404.3L292.7,408.3L291.6,413.4L292.6,416.9L289.4,419.3L284.1,420.3L279.0,417.8L277.0,419.6L277.7,426.5L281.3,428.7L284.1,426.4L285.7,430.1L280.9,432.3L276.7,436.8L275.9,444.1L274.7,448.1L269.7,448.1L265.6,451.9L264.1,457.6L269.3,463.2L274.3,464.7L272.5,471.7L266.3,476.1L262.9,485.6L258.1,488.8L255.9,492.6L257.6,501.3L261.1,506.3L258.9,505.8L254.1,504.5L241.4,503.3L239.2,498.4L239.3,492.2L235.8,492.7L234.0,489.7L233.5,481.1L237.6,477.6L239.2,472.6L238.6,468.6L241.4,462.0L243.3,452.0L242.7,447.6L245.0,446.2L244.5,443.4L242.0,442.0L243.8,438.9L241.4,436.2L240.2,427.9L242.3,426.5L241.4,418.0L242.6,410.9L244.0,404.9L247.2,402.5L245.6,396.0L245.6,389.9L249.5,385.7L249.4,380.3L252.4,374.1L252.4,368.3L251.0,367.2L248.6,356.5L251.9,350.2L251.4,344.3L253.2,338.9L256.7,333.3L260.4,329.7L258.8,327.4L259.9,325.5L259.7,315.8L265.4,313.0L267.2,307.1L266.6,305.6L270.9,300.5L277.8,301.9Z","BZ":"M151.2,88.5L151.1,87.7L152.7,88.1L154.6,84.7L155.6,84.7L156.6,85.5L156.5,87.0L155.6,89.4L156.1,90.2L155.6,92.2L155.3,95.5L154.3,96.9L153.3,97.1L152.3,99.0L150.7,99.0L151.1,92.8L151.2,88.5Z","BO":"M288.9,301.7L282.9,301.4L280.9,306.0L277.8,301.9L270.9,300.5L266.6,305.6L262.8,306.4L260.8,298.6L257.9,292.3L259.6,286.9L256.8,284.6L256.1,280.6L253.6,276.9L256.9,270.9L254.6,266.4L255.8,264.5L254.9,262.5L256.9,259.8L257.0,255.2L257.3,251.4L258.4,249.6L253.9,241.0L257.8,241.5L260.5,241.3L261.7,239.7L266.2,237.6L269.0,235.6L275.8,234.7L275.3,238.7L275.9,240.7L275.5,244.3L281.2,249.1L287.1,250.0L289.1,252.0L292.7,253.0L294.8,254.6L298.1,254.6L301.2,256.2L301.4,259.3L302.4,260.9L302.5,263.2L301.0,263.3L303.0,269.6L313.0,269.8L312.3,273.0L312.8,275.2L315.7,276.7L316.9,280.1L316.0,284.5L314.5,286.9L315.1,290.1L313.4,291.2L313.3,289.5L308.4,286.7L303.6,286.6L294.5,288.2L291.9,293.1L291.8,296.1L289.7,302.9L288.9,301.7Z","BR":"M316.2,349.5L323.2,341.3L329.1,335.5L332.7,333.1L337.1,329.8L337.2,325.1L334.6,321.8L332.0,322.9L333.0,319.5L333.7,316.1L333.7,313.0L331.8,311.9L329.9,312.9L327.9,312.6L327.3,310.4L326.8,305.2L325.8,303.5L322.3,302.0L320.1,303.1L314.6,302.0L315.0,294.3L313.4,291.2L315.1,290.1L314.5,286.9L316.0,284.5L316.9,280.1L315.7,276.7L312.8,275.2L312.3,273.0L313.0,269.8L303.0,269.6L301.0,263.3L302.5,263.2L302.4,260.9L301.4,259.3L301.2,256.2L298.1,254.6L294.8,254.6L292.7,253.0L289.1,252.0L287.1,250.0L281.2,249.1L275.5,244.3L275.9,240.7L275.3,238.7L275.8,234.7L269.0,235.6L266.2,237.6L261.7,239.7L260.5,241.3L257.8,241.5L253.9,241.0L250.9,241.9L248.6,241.3L248.9,233.2L244.6,236.4L240.0,236.2L238.0,233.4L234.5,233.1L235.6,230.8L232.7,227.6L230.5,222.8L231.9,221.9L231.9,219.6L235.1,218.1L234.6,215.2L235.9,213.4L236.3,211.0L242.3,207.4L246.6,206.4L247.3,205.6L252.0,205.8L254.3,191.4L254.5,189.2L253.6,186.2L251.3,184.3L251.3,180.5L254.3,179.6L255.3,180.1L255.5,178.1L252.5,177.6L252.4,174.3L262.6,174.4L264.3,172.6L265.8,174.3L266.8,177.4L267.8,176.7L270.7,179.5L274.7,179.2L275.8,177.6L279.7,176.3L281.8,175.5L282.4,173.3L286.2,171.8L285.9,170.7L281.4,170.2L280.7,166.9L280.9,163.4L278.6,162.0L279.6,161.5L283.4,162.2L287.6,163.5L289.1,162.3L292.9,161.5L298.7,159.5L300.7,157.5L300.0,156.0L302.7,155.8L303.9,157.0L303.2,159.3L305.0,160.1L306.2,162.5L304.8,164.4L303.9,168.9L305.3,171.5L305.7,173.9L308.9,176.4L311.5,176.6L312.0,175.6L313.7,175.4L316.1,174.5L317.8,173.1L320.7,173.5L321.9,173.3L324.8,173.8L325.3,172.7L324.4,171.7L324.9,170.1L327.0,170.6L329.5,170.1L332.5,171.2L334.8,172.3L336.4,170.8L337.6,171.1L338.3,172.5L340.8,172.2L342.8,170.2L344.4,166.3L347.5,161.5L349.3,161.3L350.6,164.2L353.5,173.3L356.3,174.2L356.5,177.8L352.5,182.1L354.2,183.7L363.4,184.5L363.6,189.8L367.6,186.3L374.2,188.2L382.9,191.4L385.4,194.5L384.6,197.4L390.7,195.8L400.9,198.6L408.7,198.3L416.4,202.7L423.1,208.6L427.2,210.1L431.6,210.3L433.5,212.0L435.3,218.7L436.2,221.9L434.1,230.6L431.4,234.1L424.0,241.5L420.7,247.5L416.8,252.2L415.5,252.3L414.1,256.3L414.4,266.4L413.0,274.8L412.4,278.4L410.8,280.6L409.8,288.0L404.5,295.3L403.6,301.1L399.4,303.6L398.2,307.0L392.5,307.0L384.2,309.1L380.5,311.7L374.7,313.4L368.5,317.9L364.1,323.7L363.3,328.1L364.2,331.3L363.2,337.3L362.0,340.2L358.4,343.5L352.5,354.1L347.9,359.0L344.4,361.9L342.0,367.8L338.5,371.4L337.1,367.8L339.4,364.9L336.3,360.7L332.2,357.3L326.8,353.3L324.9,353.5L319.6,348.8L316.2,349.5Z","CL":"M258.6,508.7L258.6,528.5L264.2,528.5L267.4,528.8L265.6,532.5L261.1,535.3L258.6,535.0L255.5,534.3L251.6,531.5L246.2,530.2L239.6,525.1L234.2,520.3L227.0,510.5L231.3,512.3L238.7,518.2L245.6,521.3L248.3,517.3L250.0,511.3L254.9,507.7L258.6,508.7Z M260.8,298.6L262.8,306.4L266.6,305.6L267.2,307.1L265.4,313.0L259.7,315.8L259.9,325.5L258.8,327.4L260.4,329.7L256.7,333.3L253.2,338.9L251.4,344.3L251.9,350.2L248.6,356.5L251.0,367.2L252.4,368.3L252.4,374.1L249.4,380.3L249.5,385.7L245.6,389.9L245.6,396.0L247.2,402.5L244.0,404.9L242.6,410.9L241.4,418.0L242.3,426.5L240.2,427.9L241.4,436.2L243.8,438.9L242.0,442.0L244.5,443.4L245.0,446.2L242.7,447.6L243.3,452.0L241.4,462.0L238.6,468.6L239.2,472.6L237.6,477.6L233.5,481.1L234.0,489.7L235.8,492.7L239.3,492.2L239.2,498.4L241.4,503.3L254.1,504.5L258.9,505.8L254.3,505.8L251.7,507.9L247.0,511.0L246.2,519.2L243.9,519.4L238.0,516.5L232.0,510.4L225.5,505.5L223.9,500.1L225.4,495.2L222.7,489.7L222.1,476.0L224.3,468.4L229.8,462.4L221.9,460.2L226.9,453.5L228.6,441.2L234.5,443.8L237.2,428.9L233.7,427.0L232.0,435.9L228.7,434.9L230.4,424.7L232.2,411.9L234.6,407.2L233.1,400.7L232.6,393.2L234.8,393.0L238.1,382.5L241.7,372.3L243.9,363.0L242.7,353.7L244.3,348.7L243.6,341.3L246.7,334.0L247.6,322.7L249.3,310.7L251.0,298.1L250.6,288.9L249.5,281.1L252.2,279.7L253.6,276.9L256.1,280.6L256.8,284.6L259.6,286.9L257.9,292.3L260.8,298.6Z","CO":"M223.3,184.1L221.0,182.8L218.5,181.1L217.0,181.9L212.5,181.2L211.3,179.0L210.3,179.0L205.0,176.1L204.3,174.4L206.3,174.0L206.1,171.4L207.3,169.5L209.9,169.2L212.1,165.9L214.1,163.1L212.2,161.9L213.2,158.8L212.0,154.0L213.1,152.6L212.3,148.2L210.1,145.4L210.8,142.8L212.5,143.2L213.5,141.6L212.3,138.5L212.9,137.7L215.6,137.9L219.5,134.2L221.7,133.6L221.8,131.8L222.7,127.3L225.7,124.9L229.0,124.8L229.4,123.7L233.5,124.1L237.7,121.4L239.7,120.2L242.2,117.6L244.1,118.0L245.5,119.4L244.5,121.2L241.1,122.1L239.8,124.7L237.7,126.3L236.2,128.2L235.6,132.0L234.1,135.1L236.8,135.5L237.5,137.9L238.6,139.1L239.1,141.2L238.4,143.2L238.6,144.3L239.9,144.7L241.2,146.6L247.9,146.1L250.9,146.7L254.6,151.3L256.7,150.7L260.5,151.0L263.5,150.4L265.4,151.3L264.4,154.1L263.2,155.9L262.8,159.7L263.9,163.2L265.4,164.7L265.6,165.9L262.9,168.5L264.8,169.7L266.2,171.5L267.8,176.7L266.8,177.4L265.8,174.3L264.3,172.6L262.6,174.4L252.4,174.3L252.5,177.6L255.5,178.1L255.3,180.1L254.3,179.6L251.3,180.5L251.3,184.3L253.6,186.2L254.5,189.2L254.3,191.4L252.0,205.8L249.4,203.0L247.8,202.9L251.2,197.6L247.2,195.1L244.0,195.6L242.1,194.7L239.2,196.0L235.3,195.4L232.3,189.9L229.8,188.5L228.2,186.1L224.7,183.6L223.3,184.1Z","CR":"M183.5,140.1L180.7,138.9L179.6,137.8L180.2,136.9L180.0,135.7L178.6,134.4L176.5,133.4L174.7,132.7L174.4,131.1L173.0,130.2L173.3,131.7L172.3,133.0L171.1,131.5L169.4,131.0L168.7,129.9L168.7,128.3L169.4,126.6L167.9,125.9L169.1,124.8L169.9,124.2L173.4,125.6L174.6,124.9L176.2,125.3L177.1,126.4L178.6,126.8L179.9,125.6L181.2,128.5L183.3,130.7L185.7,132.9L183.7,133.4L183.7,135.6L184.8,136.3L184.0,137.0L184.2,137.9L183.8,139.0L183.5,140.1Z","CU":"M187.2,58.4L191.7,58.8L195.8,58.8L200.7,60.8L202.8,62.9L207.7,62.2L209.6,63.5L214.0,67.0L217.3,69.6L219.0,69.5L222.1,70.6L221.7,72.2L225.6,72.5L229.5,74.7L228.9,76.1L225.4,76.8L221.9,77.0L218.3,76.6L210.8,77.1L214.3,74.0L212.2,72.6L208.8,72.2L207.0,70.6L205.8,67.4L202.8,67.6L197.9,66.1L196.3,64.9L189.5,64.0L187.7,62.9L189.6,61.5L184.5,61.2L180.7,64.2L178.6,64.2L177.8,65.6L175.2,66.2L173.0,65.7L175.8,64.0L176.9,61.9L179.3,60.6L181.9,59.5L185.9,59.0L187.2,58.4Z","DO":"M242.5,77.9L243.1,77.0L247.2,77.0L250.3,78.4L251.7,78.3L252.6,80.3L255.5,80.2L255.3,81.8L257.7,82.0L260.2,84.0L258.3,86.3L255.8,85.1L253.4,85.3L251.7,85.1L250.7,86.1L248.7,86.4L247.9,85.1L246.2,85.9L244.1,89.6L242.7,88.8L242.5,87.2L242.6,85.7L241.2,84.0L242.5,83.1L242.9,81.0L242.5,77.9Z","EC":"M197.5,201.1L200.3,197.2L199.1,194.9L197.1,197.4L194.0,195.1L195.0,193.6L194.2,188.8L196.0,188.0L197.0,184.8L198.9,181.4L198.6,179.3L201.4,178.1L205.0,176.1L210.3,179.0L211.3,179.0L212.5,181.2L217.0,181.9L218.5,181.1L221.0,182.8L223.3,184.1L224.0,188.1L222.4,191.5L216.7,197.0L210.4,199.0L207.2,203.6L206.2,207.1L203.2,209.3L201.0,206.6L198.9,206.1L196.7,206.5L196.6,204.6L198.1,203.3L197.5,201.1Z","GT":"M146.2,110.6L143.5,109.7L140.2,109.6L137.8,108.5L135.0,106.3L135.1,104.7L135.7,103.5L135.0,102.4L137.5,98.0L144.2,98.0L144.4,96.1L143.5,95.8L142.9,94.6L141.0,93.4L139.1,91.5L141.4,91.5L141.4,88.4L146.3,88.4L151.2,88.5L151.1,92.8L150.7,99.0L152.3,99.0L154.0,100.0L154.4,99.2L156.0,99.9L153.6,101.9L151.1,103.4L150.7,104.5L151.1,105.6L150.1,106.9L148.8,107.3L148.1,108.5L146.3,109.9Z","GF":"M342.8,170.2L340.8,172.2L338.3,172.5L337.6,171.1L336.4,170.8L334.8,172.3L332.5,171.2L333.8,168.9L334.3,166.6L335.2,164.3L333.1,161.2L332.7,157.6L335.5,153.1L337.2,153.7L341.1,154.9L346.6,159.4L347.5,161.5L344.4,166.3L342.8,170.2Z","GY":"M305.1,139.3L308.5,141.3L311.8,144.7L311.9,147.4L313.9,147.5L316.7,150.1L318.8,151.9L317.9,156.7L314.7,158.1L315.0,159.3L314.1,162.0L316.4,165.8L318.0,165.8L318.7,168.8L321.9,173.3L320.7,173.5L317.8,173.1L316.1,174.5L313.7,175.4L312.0,175.6L311.5,176.6L308.9,176.4L305.7,173.9L305.3,171.5L303.9,168.9L304.8,164.4L306.2,162.5L305.0,160.1L303.2,159.3L303.9,157.0L302.7,155.8L300.0,156.0L296.4,152.0L297.8,150.6L297.7,148.1L301.0,147.3L302.3,146.3L300.5,144.3L300.9,142.4L305.1,139.3Z","HN":"M160.7,114.7L159.8,113.0L158.2,112.5L158.6,110.4L157.9,109.8L156.8,109.4L154.5,110.1L154.3,109.3L152.7,108.5L151.6,107.4L150.1,106.9L151.1,105.6L150.7,104.5L151.1,103.4L153.6,101.9L156.0,99.9L157.7,99.1L159.2,99.0L160.5,99.2L162.9,99.7L165.3,99.6L167.0,99.0L167.6,98.3L169.3,98.6L170.5,99.0L171.9,98.9L172.9,98.4L175.3,99.1L176.2,99.3L177.8,100.3L179.3,101.5L181.2,102.3L182.6,103.8L180.8,103.7L180.0,104.5L178.2,105.2L176.9,105.2L175.7,105.9L174.7,105.6L173.8,104.8L172.6,106.2L172.0,107.3L170.2,108.8L169.2,109.4L168.7,110.1L167.1,109.0L166.0,110.5L164.9,110.4L163.7,110.5L163.8,113.2L163.0,113.2L162.4,114.5L160.7,114.7Z","HT":"M234.7,76.8L237.9,77.1L242.5,77.9L242.9,81.0L242.5,83.1L241.2,84.0L242.6,85.7L242.5,87.2L239.0,86.2L236.5,86.6L233.3,86.2L230.9,87.2L228.1,85.5L228.5,83.7L233.4,84.5L237.3,85.0L239.2,83.7L236.8,81.3L236.8,79.2L233.5,78.3L234.7,76.8Z","JM":"M211.8,84.7L215.3,85.2L218.1,86.5L219.0,88.0L215.3,88.1L213.7,89.1L210.7,88.2L207.8,86.2L208.4,84.9L210.6,84.5L211.8,84.7Z","MX":"M109.3,42.9L107.2,48.0L106.3,52.2L105.9,59.8L105.4,62.6L106.3,65.7L108.0,68.4L109.0,72.8L112.5,76.9L113.7,80.1L115.8,82.8L121.3,84.3L123.5,86.6L128.1,85.1L132.1,84.5L136.0,83.5L139.3,82.6L142.6,80.3L143.9,77.1L144.3,72.4L145.2,70.7L148.8,69.3L154.3,68.0L158.9,68.2L162.1,67.7L163.4,68.9L163.2,71.6L160.4,74.9L159.1,78.3L160.1,79.3L159.3,81.7L158.0,86.0L156.7,84.6L155.6,84.7L154.6,84.7L152.7,88.1L151.7,87.4L151.2,88.5L146.3,88.4L141.4,88.4L141.4,91.5L139.1,91.5L141.0,93.4L142.9,94.6L143.5,95.8L144.4,96.1L144.2,98.0L137.5,98.0L135.0,102.4L135.7,103.5L135.1,104.7L135.0,106.3L129.1,100.5L126.4,98.7L122.1,97.3L119.2,97.7L115.0,99.7L112.3,100.3L108.6,98.8L104.7,97.8L99.8,95.3L95.9,94.5L89.9,92.0L85.6,89.3L84.2,87.9L81.3,87.5L75.9,85.8L73.8,83.3L68.1,80.1L65.5,76.6L64.3,73.9L66.0,73.4L65.5,71.8L66.7,70.3L66.7,68.4L64.9,65.8L64.5,63.6L62.7,60.7L58.1,55.1L52.8,50.6L50.3,47.0L45.8,44.6L44.8,43.2L45.6,39.6L42.9,38.2L39.9,35.4L38.5,31.2L35.7,30.8L32.7,27.6L30.2,24.7L30.0,22.9L27.2,18.3L25.3,13.7L25.4,11.3L21.6,8.9L19.9,9.1L16.9,7.4L16.0,9.9L16.9,12.9L17.4,17.4L19.2,19.9L23.1,24.1L24.0,25.5L24.8,25.9L25.5,28.0L26.4,27.9L27.4,31.7L29.0,33.2L30.1,35.3L33.4,38.3L35.2,43.7L36.7,46.3L38.2,49.0L38.5,52.0L41.0,52.2L43.1,54.8L45.0,57.4L44.9,58.4L42.7,60.5L41.7,60.4L40.4,57.0L36.9,53.7L33.2,50.9L30.5,49.5L30.6,45.3L29.9,42.1L27.4,40.3L23.8,37.7L23.1,38.4L21.7,36.9L18.5,35.5L15.4,32.1L18.0,31.9L19.9,29.7L20.1,27.0L16.1,22.8L13.0,21.1L11.1,17.3L9.1,13.4L6.7,8.5L4.6,2.9L10.5,2.4L17.2,1.7L16.7,3.0L24.6,6.0L36.5,10.3L47.0,10.3L51.1,10.3L51.1,7.7L60.2,7.7L62.1,9.9L64.8,11.8L67.9,14.5L69.6,17.7L70.9,21.0L73.6,22.8L78.0,24.6L81.3,19.9L85.6,19.8L89.3,22.2L91.9,26.3L93.7,29.8L96.8,33.1L98.0,37.3L99.4,40.0L103.5,41.8L107.2,43.1L109.3,42.9Z","NI":"M169.1,124.8L167.3,123.2L164.9,121.0L163.7,119.2L161.5,117.5L158.9,115.1L159.5,114.3L160.3,115.1L162.4,114.5L163.0,113.2L163.8,113.2L163.7,110.5L164.9,110.4L166.0,110.5L167.1,109.0L168.7,110.1L169.2,109.4L170.2,108.8L172.0,107.3L172.1,106.2L173.3,104.9L174.7,105.6L175.7,105.9L176.9,105.2L178.2,105.2L180.0,104.5L180.8,103.7L182.6,103.8L181.8,105.6L182.4,107.5L181.2,109.4L180.6,111.5L180.4,113.9L180.7,115.3L180.9,117.7L180.1,118.3L179.6,120.5L179.9,122.0L178.9,123.3L179.1,124.8L179.9,125.6L178.6,126.8L177.1,126.4L176.2,125.3L174.6,124.9L173.4,125.6L169.9,124.2L169.1,124.8Z","PA":"M210.1,145.4L208.4,143.8L207.3,141.0L208.6,139.6L207.2,139.2L206.3,137.4L203.7,136.0L201.4,136.3L200.3,138.2L198.2,139.5L197.0,139.7L196.5,140.8L199.0,143.6L197.6,144.3L196.8,145.1L194.4,145.4L193.5,142.2L192.8,143.1L191.1,142.8L190.0,140.7L187.9,140.3L186.5,139.7L184.3,139.7L184.1,140.9L183.5,140.1L183.8,139.0L184.2,137.9L184.0,137.0L184.8,136.3L183.7,135.6L183.7,133.4L185.7,132.9L187.6,134.9L187.5,136.0L189.6,136.2L191.5,137.1L194.1,136.7L196.3,135.4L199.5,134.3L201.3,132.7L204.2,133.0L206.9,133.7L209.2,134.6L210.9,136.2L212.9,137.7L212.3,138.5L213.5,141.6L212.5,143.2L210.8,142.8L210.1,145.4Z","PE":"M253.6,276.9L252.2,279.7L249.5,281.1L244.2,277.9L243.8,275.7L233.4,270.2L224.0,264.2L220.0,260.9L217.8,256.4L218.6,254.9L214.2,247.8L209.0,238.0L204.1,227.4L201.9,225.0L200.3,221.1L196.2,217.6L192.5,215.5L194.2,213.1L191.7,208.1L193.3,204.5L197.5,201.1L198.1,203.3L196.6,204.6L196.7,206.5L198.9,206.1L201.0,206.6L203.2,209.3L206.2,207.1L207.2,203.6L210.4,199.0L216.7,197.0L222.4,191.5L224.0,188.1L223.3,184.1L224.7,183.6L228.2,186.1L229.8,188.5L232.3,189.9L235.3,195.4L239.2,196.0L242.1,194.7L244.0,195.6L247.2,195.1L251.2,197.6L247.8,202.9L249.4,203.0L252.0,205.8L247.3,205.6L246.6,206.4L242.3,207.4L236.3,211.0L235.9,213.4L234.6,215.2L235.1,218.1L231.9,219.6L231.9,221.9L230.5,222.8L232.7,227.6L235.6,230.8L234.5,233.1L238.0,233.4L240.0,236.2L244.6,236.4L248.9,233.2L248.6,241.3L250.9,241.9L253.9,241.0L258.4,249.6L257.3,251.4L257.0,255.2L256.9,259.8L254.9,262.5L255.8,264.5L254.6,266.4L256.9,270.9L253.6,276.9Z","PR":"M270.9,84.6L273.6,85.1L274.5,86.2L273.2,87.5L269.2,87.5L266.2,87.7L265.9,85.4L266.6,84.5L270.9,84.6Z","PY":"M289.7,302.9L291.8,296.1L291.9,293.1L294.5,288.2L303.6,286.6L308.4,286.7L313.3,289.5L313.4,291.2L315.0,294.3L314.6,302.0L320.1,303.1L322.3,302.0L325.8,303.5L326.8,305.2L327.3,310.4L327.9,312.6L329.9,312.9L331.8,311.9L333.7,313.0L333.7,316.1L333.0,319.5L332.0,322.9L331.1,328.0L326.4,332.5L322.2,333.5L316.3,332.6L311.0,331.0L316.2,322.1L315.5,319.5L310.1,317.3L303.7,313.0L299.4,312.2L289.7,302.9Z","SV":"M158.2,112.5L157.6,113.8L154.6,113.7L152.7,113.2L150.6,112.1L147.6,111.8L146.2,110.6L148.1,108.5L149.1,107.9L150.1,106.9L151.6,107.4L152.7,108.5L154.3,109.3L154.5,110.1L156.8,109.4L157.9,109.8L158.6,110.4L158.2,112.5Z","SR":"M318.8,151.9L325.0,153.0L325.6,152.1L329.8,151.7L335.5,153.1L332.7,157.6L333.1,161.2L335.2,164.3L334.3,166.6L333.8,169.0L332.5,171.2L329.5,170.1L327.0,170.6L324.9,170.1L324.4,171.7L325.3,172.7L324.8,173.8L321.9,173.3L318.7,168.8L318.0,165.8L316.4,165.8L314.1,162.0L315.0,159.3L314.7,158.1L317.9,156.7L318.8,151.9Z","TT":"M295.0,126.6L298.0,125.9L299.1,126.1L298.9,130.1L294.5,130.6L293.6,130.2L295.1,128.7L295.0,126.6Z","UY":"M316.2,349.5L319.6,348.8L324.9,353.5L326.8,353.3L332.2,357.3L336.3,360.7L339.4,364.9L337.1,367.8L338.5,371.4L336.3,375.4L330.3,378.9L326.5,377.6L323.6,378.3L318.8,375.6L315.2,375.8L312.0,372.3L312.5,368.2L313.6,366.8L313.5,360.6L314.9,354.3L316.2,349.5Z","VE":"M244.5,121.2L244.3,122.4L241.2,123.1L242.9,125.5L242.9,128.3L240.6,131.4L242.5,135.6L244.8,135.2L246.0,131.4L244.4,129.5L244.1,125.5L250.6,123.3L249.9,120.8L251.7,119.1L253.6,122.9L257.3,122.9L260.7,125.9L260.9,127.7L265.6,127.7L271.2,127.2L274.2,129.6L278.2,130.2L281.1,128.6L281.2,127.2L287.7,126.9L294.0,126.8L289.5,128.4L291.3,130.9L295.5,131.3L299.5,133.9L300.3,138.2L303.0,138.1L305.1,139.3L300.9,142.4L300.5,144.3L302.3,146.3L301.0,147.3L297.7,148.1L297.8,150.6L296.4,152.0L300.0,156.0L300.7,157.5L298.7,159.5L292.9,161.5L289.1,162.3L287.6,163.5L283.4,162.2L279.6,161.5L278.6,162.0L280.9,163.4L280.7,166.9L281.4,170.2L285.9,170.7L286.2,171.8L282.4,173.3L281.8,175.5L279.7,176.3L275.8,177.6L274.7,179.2L270.7,179.5L267.8,176.7L266.2,171.5L264.8,169.7L262.9,168.5L265.6,165.9L265.4,164.7L263.9,163.2L262.8,159.7L263.2,155.9L264.4,154.1L265.4,151.3L263.5,150.4L260.5,151.0L256.7,150.7L254.6,151.3L250.9,146.7L247.9,146.1L241.2,146.6L239.9,144.7L238.6,144.3L238.4,143.2L239.1,141.2L238.6,139.1L237.5,137.9L236.8,135.5L234.1,135.1L235.6,132.0L236.2,128.2L237.7,126.3L239.8,124.7L241.1,122.1L244.5,121.2Z"};
+var C={"AR":[280.4,392.8],"BZ":[153.6,91.8],"BO":[285.2,269.9],"BR":[345.7,235.9],"CL":[252.5,383.8],"CO":[236.1,162.0],"CR":[176.8,132.1],"CU":[201.3,67.8],"DO":[250.7,83.3],"EC":[209.0,192.7],"GT":[145.5,99.6],"GF":[340.0,162.8],"GY":[309.2,158.0],"HN":[166.3,106.5],"HT":[235.5,82.0],"JM":[213.4,86.8],"MX":[83.8,53.7],"NI":[170.7,115.3],"PA":[198.5,139.0],"PE":[227.9,233.3],"PR":[270.2,86.1],"PY":[311.7,309.7],"SV":[152.4,110.4],"SR":[324.8,162.7],"TT":[296.4,128.3],"UY":[325.7,363.7],"VE":[269.6,149.5]};
+var skip=['BZ','JM','HT','PR','GY','SR','GF','TT'];
+var svg='<svg viewBox="0 30 440 519" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa da América Latina">';
+for(var k in P){
+if(skip.indexOf(k)>=0||!countries[k]){
+svg+='<path class="country-path" d="'+P[k]+'" style="opacity:0.45;cursor:default"/>';
+continue;
+}
+svg+='<path class="country-path" d="'+P[k]+'" data-country="'+k+'" tabindex="0" role="button" aria-label="'+countries[k].name+'"/>';
+}
+var small=['GT','HN','SV','NI','CR','PA','DO','CU','UY','EC'];
+for(var k in C){
+if(!countries[k]||skip.indexOf(k)>=0)continue;
+var cls=small.indexOf(k)>=0?'country-label small':'country-label';
+svg+='<text class="'+cls+'" x="'+C[k][0]+'" y="'+C[k][1]+'">'+countries[k].name+'</text>';
+}
+svg+='</svg>';
+document.getElementById('mapContainer').innerHTML=svg;
+var mc=document.getElementById('mapContainer');
+mc.addEventListener('click',function(e){
+var p=e.target.closest('.country-path[data-country]');
+if(p)selectCountry(p.getAttribute('data-country'));
+});
+mc.addEventListener('keydown',function(e){
+if(e.key==='Enter'||e.key===' '){
+var p=e.target.closest('.country-path[data-country]');
+if(p){e.preventDefault();selectCountry(p.getAttribute('data-country'));}
+}
+});
+}
+var selectedCountry = null;
+function selectCountry(code){
+var data = countries[code];
+if(!data) return;
+// Deselect previous
+document.querySelectorAll('.country-path.selected').forEach(function(p){p.classList.remove('selected')});
+document.querySelectorAll('.country-label.selected-label').forEach(function(l){l.classList.remove('selected-label')});
+// Select new
+var path = document.querySelector('[data-country="'+code+'"]');
+var label = document.querySelector('[data-label="'+code+'"]');
+if(path) path.classList.add('selected');
+if(label) label.classList.add('selected-label');
+selectedCountry = code;
+// Update panel
+document.getElementById('panelEmpty').style.display = 'none';
+document.getElementById('panelContent').classList.add('active');
+document.getElementById('panelCountryName').textContent = data.name;
+document.getElementById('panelCountryRegion').textContent = typeof data.region === 'object' ? data.region[currentLang] : data.region;
+// Contact
+var contactHtml = '';
+contactHtml += '<div class="panel-contact-item"><div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></div><span><a href="mailto:'+data.email+'">'+data.email+'</a></span></div>';
+contactHtml += '<div class="panel-contact-item"><div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><span>'+data.phone+'</span></div>';
+document.getElementById('panelContactInfo').innerHTML = contactHtml;
+// Courses
+var coursesHtml = '';
+if(data.courses.length === 0){
+window._notifyCC=code;
+coursesHtml='<div style="background:rgba(162,9,52,0.06);border:1px solid rgba(162,9,52,0.15);border-radius:12px;padding:1.2rem;text-align:center">';
+coursesHtml+='<p style="color:var(--text-medium);font-size:0.85rem;margin-bottom:0.6rem">'+i18n[currentLang].panel_no_courses+'</p>';
+coursesHtml+='<p style="color:var(--gold);font-size:0.8rem;font-weight:600;margin-bottom:0.8rem">'+i18n[currentLang].notify_txt+'</p>';
+coursesHtml+='<div style="display:flex;gap:0.5rem"><input type="email" id="notifyEmail" placeholder="'+i18n[currentLang].notify_ph+'" style="flex:1;background:#FBFAF9;border:1px solid rgba(43,61,79,0.18);color:var(--text-dark);padding:0.55rem 0.8rem;border-radius:8px;font-size:0.82rem;font-family:var(--font-body)"/>';
+coursesHtml+='<button onclick="submitNotify()" style="background:var(--gold);color:#FFFFFF;border:none;padding:0.55rem 1rem;border-radius:8px;font-weight:600;font-size:0.78rem;cursor:pointer;white-space:nowrap;font-family:var(--font-body)">'+i18n[currentLang].notify_btn+'</button></div></div>';
+} else {
+data.courses.forEach(function(c){
+var tagText = typeof c.tag === 'object' ? c.tag[currentLang] : c.tag;
+coursesHtml += '<div class="panel-course"><div class="panel-course-name">'+c.name+'<span class="panel-course-tag">'+tagText+'</span></div><div class="panel-course-date">'+c.date+'</div></div>';
+});
+}
+document.getElementById('panelCourses').innerHTML = coursesHtml;
+// Also set form country
+var formSelect = document.getElementById('formCountry');
+if(formSelect) formSelect.value = code;
+}
+// ======== RENDER FUNCTIONS ========
+function renderConsultingSteps(){
+var steps = i18n[currentLang].consulting_steps;
+var html = '';
+steps.forEach(function(s,i){
+html += '<div class="consulting-step"><div class="step-num">'+(i+1)+'</div><div class="step-text"><h4>'+s.t+'</h4><p>'+s.d+'</p></div></div>';
+});
+document.getElementById('consultingSteps').innerHTML = html;
+}
+function renderLearningCards(){
+var cards = i18n[currentLang].learning_cards;
+var icons = [
+['<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>','<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>'],
+['<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>','<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>'],
+['<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>','<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>'],
+['<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>','<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/>']
+];
+var html = '';
+cards.forEach(function(c,i){
+var ic = icons[i] || icons[0];
+html += '<div class="learning-card fade-up"><div class="learning-card-header"><div class="tag">'+c.tag+'</div><h3>'+c.title+'</h3></div><div class="learning-card-body"><p>'+c.text+'</p><div class="learning-meta"><div class="meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">'+ic[0]+'</svg> '+c.m1+'</div><div class="meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">'+ic[1]+'</svg> '+c.m2+'</div></div></div></div>';
+});
+document.getElementById('learningGrid').innerHTML = html;
+// Re-observe fade ups
+document.querySelectorAll('#learningGrid .fade-up').forEach(function(el){obs.observe(el)});
+}
+function renderInsights(){
+var cards = i18n[currentLang].insight_cards;
+var html = '';
+cards.forEach(function(c){
+html += '<div class="insight-card fade-up"><div class="insight-card-color"></div><div class="insight-card-body"><div class="cat">'+c.cat+'</div><h3>'+c.title+'</h3><p>'+c.text+'</p></div></div>';
+});
+document.getElementById('insightsGrid').innerHTML = html;
+document.querySelectorAll('#insightsGrid .fade-up').forEach(function(el){obs.observe(el)});
+}
+// ======== LANGUAGE SWITCH ========
+function setLang(lang){
+currentLang = lang;
+document.getElementById('langPt').classList.toggle('active', lang==='pt');
+document.getElementById('langEs').classList.toggle('active', lang==='es');
+document.documentElement.lang = lang==='pt'?'pt-BR':'es';
+applyI18n();
+renderConsultingSteps();
+renderLearningCards();
+renderInsights();
+if(selectedCountry) selectCountry(selectedCountry);
+}
+function applyI18n(){
+var t = i18n[currentLang];
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(t[key]) el.textContent = t[key];
+});
+document.querySelectorAll('[data-i18n-html]').forEach(function(el){
+var key = el.getAttribute('data-i18n-html');
+if(t[key]) el.innerHTML = t[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(t[key]) el.placeholder = t[key];
+});
+}
+// ======== NAVIGATION ========
+function goTo(id){
+closeMobile();
+var el = document.getElementById(id);
+if(!el) return;
+var y = el.getBoundingClientRect().top + window.pageYOffset - 102;
+window.scrollTo({top:y,behavior:'smooth'});
+}
+function toggleMobile(){
+var m=document.getElementById('mobileMenu'),o=document.getElementById('mobileOverlay'),b=document.getElementById('hamburger');
+if(m.classList.contains('open')){closeMobile()}else{m.classList.add('open');o.classList.add('show');b.classList.add('open');document.body.style.overflow='hidden'}
+}
+function closeMobile(){
+var m=document.getElementById('mobileMenu'),o=document.getElementById('mobileOverlay'),b=document.getElementById('hamburger');
+m.classList.remove('open');o.classList.remove('show');b.classList.remove('open');document.body.style.overflow='';
+}
+window.addEventListener('scroll',function(){
+document.getElementById('header').classList.toggle('scrolled',window.scrollY>50);
+var ids=['inicio','sobre','consultoria','aprendizado','mapa','insights','contato'],cur='inicio';
+for(var i=0;i<ids.length;i++){var s=document.getElementById(ids[i]);if(s&&s.getBoundingClientRect().top<=110)cur=ids[i]}
+document.querySelectorAll('[data-section]').forEach(function(a){a.classList.toggle('active',a.getAttribute('data-section')===cur)});
+});
+// ======== FADE OBSERVER ========
+var obs = new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
+function submitForm(e){
+e.preventDefault();
+var f=e.target,btn=f.querySelector('.form-submit'),orig=btn.textContent;
+btn.textContent='Enviando...';btn.disabled=true;
+var d={name:f.querySelector('input[type="text"]').value,email:f.querySelector('input[type="email"]').value,company:f.querySelectorAll('input[type="text"]')[1]?f.querySelectorAll('input[type="text"]')[1].value:'',country:document.getElementById('formCountry').value,message:f.querySelector('textarea').value,source:'lamarsh-latam-website',lang:currentLang};
+fetch('https://collabz.app.n8n.cloud/webhook/lamarsh-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw new Error('x');alert(i18n[currentLang].form_success);f.reset();}).catch(function(){var s=encodeURIComponent('Contato LaMarsh LATAM - '+d.name),b=encodeURIComponent('Nome: '+d.name+'\nEmail: '+d.email+'\nEmpresa: '+d.company+'\nPais: '+d.country+'\nMsg: '+d.message);window.location.href='mailto:LaMarshLA@collabz.com.br?subject='+s+'&body='+b;}).finally(function(){btn.textContent=orig;btn.disabled=false;});
+}
+function submitNotify(){
+var email=document.getElementById('notifyEmail').value,cc=window._notifyCC||'';
+if(!email||email.indexOf('@')<0){alert(currentLang==='pt'?'Insira um e-mail válido.':'Ingrese un e-mail válido.');return;}
+fetch('https://collabz.app.n8n.cloud/webhook/lamarsh-notify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email,country:cc,name:countries[cc]?countries[cc].name:cc,type:'notify',lang:currentLang})}).then(function(){alert(i18n[currentLang].notify_ok);document.getElementById('notifyEmail').value='';}).catch(function(){window.location.href='mailto:LaMarshLA@collabz.com.br?subject='+encodeURIComponent('Interesse cursos - '+(countries[cc]?countries[cc].name:cc))+'&body='+encodeURIComponent('Email: '+email);});
+}
+// ======== INIT ========
+buildMap();
+applyI18n();
+renderConsultingSteps();
+renderLearningCards();
+renderInsights();
+document.querySelectorAll('.fade-up').forEach(function(el){obs.observe(el)});
+</script>
+<a href="https://wa.me/5511981330567?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20cursos%20LaMarsh." target="_blank" class="wpp-float" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span class="wpp-tip" data-i18n="wpp_tip"></span></a>
+</body>
+</html>
