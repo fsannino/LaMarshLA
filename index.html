@@ -274,6 +274,8 @@ transition:var(--transition);
 .footer{background:#1E2B38;padding:2.5rem 2rem 1.8rem;border-top:1px solid rgba(162,9,52,0.1)}
 .footer-inner{max-width:var(--max-width);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
 .footer-left{color:rgba(255,255,255,0.4);font-size:0.82rem}
+.footer-left a{color:rgba(255,255,255,0.6);text-decoration:none;transition:var(--transition)}
+.footer-left a:hover{color:var(--gold)}
 .footer-links{display:flex;gap:1.3rem}
 .footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.82rem;transition:var(--transition);cursor:pointer}
 .footer-links a:hover{color:var(--gold)}
@@ -531,7 +533,7 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,te
 <span class="plabel" data-i18n="partner_label"></span>
 </div>
 <div class="partner-logo-row">
-<a href="https://collabz.manus.space/" target="_blank"><img src="logo-collabz.png" alt="collab:Z"></a>
+<a href="https://www.collabz.com.br/" target="_blank" rel="noopener"><img src="logo-collabz.png" alt="collab:Z"></a>
 <div class="partner-info"><div class="pname">collab:Z</div><div class="prole" data-i18n="partner_role"></div></div>
 </div>
 <div class="partner-contact-row">
@@ -562,13 +564,14 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,te
 </section>
 <footer class="footer">
 <div class="footer-inner">
-<div class="footer-left">&copy; <span id="footerYear"></span> LaMarsh Global — América Latina</div>
+<div class="footer-left">&copy; <span id="footerYear"></span> LaMarsh Global — América Latina · <span data-i18n-html="footer_operated"></span></div>
 <div class="footer-links">
 <a href="#inicio" onclick="event.preventDefault();goTo('inicio')" data-i18n="nav_home"></a>
 <a href="#sobre" onclick="event.preventDefault();goTo('sobre')" data-i18n="nav_about"></a>
 <a href="#consultoria" onclick="event.preventDefault();goTo('consultoria')" data-i18n="nav_consulting"></a>
 <a href="#mapa" onclick="event.preventDefault();goTo('mapa')" data-i18n="nav_map"></a>
 <a href="#contato" onclick="event.preventDefault();goTo('contato')" data-i18n="nav_contact"></a>
+<a href="https://www.lamarsh.com/" target="_blank" rel="noopener">LaMarsh Global</a>
 <a href="politica-de-privacidade.html" target="_blank" rel="noopener" data-i18n="footer_privacy"></a>
 </div>
 </div>
@@ -620,7 +623,7 @@ newsletter_placeholder:"Seu e-mail",newsletter_btn:"Inscrever",newsletter_thanks
 contact_label:"Contato",contact_title:"Tem Perguntas?",
 contact_text:"Nossos especialistas estão prontos para ajudar você a encontrar o melhor caminho para sua organização.",
 contact_phone_label:"Telefone",contact_social_label:"Redes Sociais",contact_linkedin:"Siga-nos no LinkedIn",
-form_title:"Envie uma Mensagem",form_name:"Nome Completo",form_name_ph:"Seu nome",form_company:"Empresa",form_company_ph:"Nome da empresa",form_country_label:"País",form_message:"Mensagem",form_message_ph:"Como podemos ajudar?",form_submit:"Enviar Mensagem",form_success:"Mensagem enviada! Entraremos em contato em breve.",wpp_tip:"Fale conosco pelo WhatsApp",notify_txt:"Seja o primeiro a saber quando abrirmos turmas neste país:",notify_ph:"Seu melhor e-mail",notify_btn:"Avise-me",notify_ok:"Pronto! Você será notificado quando houver cursos.",partner_label:"Representante Regional",partner_role:"Innovation & Strategy — Representante LaMarsh LATAM",map_hint:"Clique em um país para ver cursos e contatos",form_consent:'Concordo com a <a href="politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o contato.',footer_privacy:"Política de Privacidade",hero_cta_secondary:"Fale com um Especialista"
+form_title:"Envie uma Mensagem",form_name:"Nome Completo",form_name_ph:"Seu nome",form_company:"Empresa",form_company_ph:"Nome da empresa",form_country_label:"País",form_message:"Mensagem",form_message_ph:"Como podemos ajudar?",form_submit:"Enviar Mensagem",form_success:"Mensagem enviada! Entraremos em contato em breve.",wpp_tip:"Fale conosco pelo WhatsApp",notify_txt:"Seja o primeiro a saber quando abrirmos turmas neste país:",notify_ph:"Seu melhor e-mail",notify_btn:"Avise-me",notify_ok:"Pronto! Você será notificado quando houver cursos.",partner_label:"Representante Regional",partner_role:"Innovation & Strategy — Representante LaMarsh LATAM",map_hint:"Clique em um país para ver cursos e contatos",form_consent:'Concordo com a <a href="politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o contato.',footer_privacy:"Política de Privacidade",hero_cta_secondary:"Fale com um Especialista",footer_operated:'Operado por <a href="https://www.collabz.com.br/" target="_blank" rel="noopener">collab:Z</a>, representante oficial'
 },
 es: {
 lang_label: "Idioma:",
@@ -665,7 +668,7 @@ newsletter_placeholder:"Su correo electrónico",newsletter_btn:"Suscribirse",new
 contact_label:"Contacto",contact_title:"¿Tiene Preguntas?",
 contact_text:"Nuestros expertos están listos para ayudarle a encontrar el mejor camino para su organización.",
 contact_phone_label:"Teléfono",contact_social_label:"Redes Sociales",contact_linkedin:"Síganos en LinkedIn",
-form_title:"Envíe un Mensaje",form_name:"Nombre Completo",form_name_ph:"Su nombre",form_company:"Empresa",form_company_ph:"Nombre de la empresa",form_country_label:"País",form_message:"Mensaje",form_message_ph:"¿Cómo podemos ayudar?",form_submit:"Enviar Mensaje",form_success:"¡Mensaje enviado! Le contactaremos pronto.",wpp_tip:"Contáctenos por WhatsApp",notify_txt:"Sea el primero en saber cuando abramos clases aquí:",notify_ph:"Su mejor e-mail",notify_btn:"Avíseme",notify_ok:"¡Listo! Le notificaremos cuando haya cursos.",partner_label:"Representante Regional",partner_role:"Innovation & Strategy — Representante LaMarsh LATAM",map_hint:"Haga clic en un país para ver cursos y contactos",form_consent:'Acepto la <a href="politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidad</a> y autorizo el contacto.',footer_privacy:"Política de Privacidad",hero_cta_secondary:"Hable con un Especialista"
+form_title:"Envíe un Mensaje",form_name:"Nombre Completo",form_name_ph:"Su nombre",form_company:"Empresa",form_company_ph:"Nombre de la empresa",form_country_label:"País",form_message:"Mensaje",form_message_ph:"¿Cómo podemos ayudar?",form_submit:"Enviar Mensaje",form_success:"¡Mensaje enviado! Le contactaremos pronto.",wpp_tip:"Contáctenos por WhatsApp",notify_txt:"Sea el primero en saber cuando abramos clases aquí:",notify_ph:"Su mejor e-mail",notify_btn:"Avíseme",notify_ok:"¡Listo! Le notificaremos cuando haya cursos.",partner_label:"Representante Regional",partner_role:"Innovation & Strategy — Representante LaMarsh LATAM",map_hint:"Haga clic en un país para ver cursos y contactos",form_consent:'Acepto la <a href="politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidad</a> y autorizo el contacto.',footer_privacy:"Política de Privacidad",hero_cta_secondary:"Hable con un Especialista",footer_operated:'Operado por <a href="https://www.collabz.com.br/" target="_blank" rel="noopener">collab:Z</a>, representante oficial'
 }
 };
 // ======== COUNTRY DATA ========
