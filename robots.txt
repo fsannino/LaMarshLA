@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.collabz.com.br/lamarsh/sitemap.xml
+Sitemap: https://www.clbz.com.br/lamarsh/sitemap.xml
