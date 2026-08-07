@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lamarshlatam.com/sitemap.xml
+Sitemap: https://www.collabz.com.br/lamarsh/sitemap.xml
